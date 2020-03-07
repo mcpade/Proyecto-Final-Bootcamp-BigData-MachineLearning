@@ -1,5 +1,9 @@
 # Proyecto Final: Bootcamp BigData&MachineLearning
 
+## 0.- Estructura del proyecto
+
+Descripción de las carpeta y comentario sobre google colab
+
 ## 1.- Objetivo
 
 Airbnb es un mercado comunitario para alquileres a corto plazo que sirve para publicar, dar publicidad y reservar alojamiento de forma económica en más de 190 países a través de internet. Es uno de los sistemas mas éxitos de la economía colaborativa – sistema económico en el que se comparten e intercambian bienes y servicios entre particulares a través de plataformas digitales -.
@@ -85,6 +89,43 @@ reviewer_name | Nombre del usuario que deja el comentario
 comments | Comentarios
 
 Ambos ficheros se encuentra en la carpeta data de este proyecto
+
+
+## 3.- Sentiment Analysis - Reviews
+
+**Code: 1 Sentimental analysis Reviews.ipynb**
+
+Utilizando técnicas de NLP voy a realizar un Sentiment Analysis de los comentarios contenidos en el fichero "reviews.csv". El objetivo es conseguir un valor para cada uno de esos comentarios aplicando análisis de sentimientos. Posteriormente se hará la media de valor obtenido para todos los comentarios para una misma vivienda y ese resultado lo añadiré como una característica más al dataset "listing.csv" de Airbnb.
+
+El código correspondiente se encuentra dentro de la carpeta Code "1 Sentimental analysis Reviews.ipynb"
+Los pasos que he realizado son los siguientes:
+
+- Transformo el fichero reviews.csv en un dataframe y recorro la columna "comments" aplicando TexBlob Sentiment Analysis sobre esa columna. TexBlob es una librearía que hace NLP y está entrenada para comentarios en inglés en redes sociales
+
+https://github.com/sloria/textblob
+https://textblob.readthedocs.io/en/latest/quickstart.html#quickstart
+
+El resultado que da TextBlob es: polarity y subjectivity. A mi me va a intersar polarity que puede ir del -1 al 1, siendo 1 el valor más positivo y -1 en valor más negativo
+
+- Como los textos están en varios idiomas utilizo la libreria spacy para detectar el idioma y quedarme solo con los que están en inglés ya que es sobre este idioma sobre el que está entrenado TexBlob
+
+- Lo siguiente que hago es agrupar por listing_id (hay varias reviews por id) y hacer la media de la columna sentiment.
+
+- Me creo un nuevo dataset con id y la media del sentiment
+
+- Hago un join con el dataset "listing" de tipo inner para buscar la intersección y con la clave id
+
+Con esto ya consigo un nuevo dataset al que le añado la columna sentiment correspondiente a los reviews.
+
+El resultado es el fichero "listing_sentiment.csv" que está en data. Durante este análisis se han ido creando ficheros csv intermedios que también están en data
+
+
+
+
+
+
+
+
 
 
 
