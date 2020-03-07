@@ -133,7 +133,7 @@ Los pasos que he realizado son los siguientes:
 - Recorro toda la columna "description" y haciendo uso de la librería **spacy** detecto el idioma añadiendo una nueva columna con ese idioma
 - Me quedo con todos los que están en inglés
 - Hago un preprocesamiento de la característica "description" convirtiendo a minúsculas, quitando stop word...etc
-- Utilizo el algoritmo LDA para hacer Topic Modeling sobre la columa description
+- Utilizo el algoritmo LDA para hacer Topic Modeling sobre la columna "description"
 - Determino cual es el número óptimo de Topic pero me quedo con 5 por simplicidad
 - Los 5 Topics que resultan son:
 
