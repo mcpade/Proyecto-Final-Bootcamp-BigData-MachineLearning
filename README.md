@@ -184,7 +184,7 @@ La documentación de esta API está en esta dirección: https://apidocs.emtmadri
 El primer paso antes de usar la API es registrarse [aquí](https://mobilitylabs.emtmadrid.es/) ya que para usar la API se necesita un token que se genera con el e-mail y la contraseña que hayamos puesto en el registro.
 
 En el propio código **"3 Distancias.ipynb"**  se realiza la comunicación con la API para obtener el fichero
-El fichero "parking.csv" que obtenemos contiene información de coordenadas geográficas de las diferentes parking públicos  de Madrid.
+El fichero "parking.csv" que obtenemos contiene información de coordenadas geográficas de los diferentes parking públicos  de Madrid.
 
 Los pasos seguidos son:
 
