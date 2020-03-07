@@ -25,10 +25,10 @@ Actualmente ya hay versiones posteriores pero en el momento del proyecto las fec
 
 Este fichero contiene un listado de todas las viviendas con sus correspondientes características. Durante el el primer paso del procesamiento iré eliminando algunas de las características. Muestras a continuación las que iré tratando tras esa limpieza inicial:
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+Característica | Descripción
+-------------- | -------------
+experiences_offered | Actividades ofrecidas
+host_since | Fecha en que el anfitrión se unió por primera vez a Airbnb
 
 
 
