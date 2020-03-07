@@ -27,6 +27,7 @@ Este fichero contiene un listado de todas las viviendas con sus correspondientes
 
 Característica | Descripción
 -------------- | -------------
+id | Identificación de la vivienda
 experiences_offered | Actividades ofrecidas
 host_since | Fecha en que el anfitrión se unió por primera vez a Airbnb
 host_response_time | Cantidad promedio de tiempo que tarda el anfitrión en responder mensajes
