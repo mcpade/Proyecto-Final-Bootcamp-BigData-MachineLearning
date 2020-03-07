@@ -194,28 +194,33 @@ Los pasos seguidos son:
 - Uno el dataset obtenido de distancias con el dataset de viviendas usando como clave el id
 
 Tras esto he añadido al datset una columna que contiene la distancia al parking más cercano.
-El resultado es el fichero **"listings_sentiment_topic_discstation_discparking.csv.csv"** que está en data. 
+El resultado es el fichero **"listings_sentiment_topic_discstation_discparking.csv"** que está en data. 
 
 
+### Distancia a los 5 museos más importantes de Madrid
 
+Voy a añadir al dataset cinco columnas con la distancia a los 5 museos más importantes de la ciudad de Madrid. Podría hacer manualmente un fichero que contuviese las coordenadas geográficas de estos 5 museos pero voy a utilizar la API de Datos Abiertos de Madrid para obtener el listado de todos los museos y de ahí escoger los que me interese por si en algún momento quiero cambiar y poner otros museos.
 
-Paso 3: Partiendo de la API de datos abiertos de Madrid ver que datos tenía ahí y añadir en el dataset unas columnas de proximidad a museo, proximidad a parking……. Proximidad a monumento…..
+La documentación de la API está [aquí](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
 
-                        Añadido al dataset columnas con:
-Distancia al parking más cercano
-Distancia a la estación de metro más cercana, tengo un csv
-Distancias a los 5 museos principales: Museo del Prado, Reina Sofia, Thyssen,  Museo Sorolla, Museo Arqueológico Nacional
-Distancias a los 5 monumentos principales:  Puerta del Sol, Plaza mayor, El Retiro, Puerta de Alcalá, Palacio Real
+En el propio código **"3 Distancias.ipynb"**  se realiza la comunicación con la API para obtener el fichero.
+El fichero "museos.csv" que obtenemos contiene información de coordenadas geográficas de los diferentes museos de Madrid.
 
+A partir de ese fichero me creo un dataset con los 5 museos principales:
 
+- Museo del Prado,
+- Museo Nacional Centro de Arte Reina Sofía,
+- Museo Nacional Thyssen-Bornemisza,
+- Museo Sorolla,
+- Museo Arqueológico Nacional
 
+Los pasos seguidos son:
 
+- Usando los datos de longitud y latitud de la vivienda y de los 5 museos cálculo la distancia de una vivienda a cada uno de ellos.
+- Añado 5 columnas al dataset original con la distancia de cada vivienda a cada uno de los 5 museos
 
-
-
-
-
-
+Tras esto he añadido al datset 5 columnas que contiene la distancia a los 5 museos más importantes
+El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_discmuseos.csv"** que está en data.
 
 
 
