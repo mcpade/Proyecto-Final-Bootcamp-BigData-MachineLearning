@@ -35,7 +35,7 @@ host_is_superhost | Si el host es un superhost. Es una marca de calidad
 host_listings_count | Cuántas viviendas tiene el host en total
 host_identity_verified | Si el host ha sido verificado con id
 neighbourhood_cleansed | El barrio de Madrid en el que está la propiedad
-property_type | Tipo de propiedad, por ejemplo casa, apartamento...
+property_type | Tipo de propiedad, por ejemplo: casa, apartamento
 room_type | Tipo de vivienda, por ejemplo: casa completa, habitación privada, compartida
 accommodates | Cuantas personas pueden alojarse en la propiedad
 bathrooms | Número de cuartos de baño
