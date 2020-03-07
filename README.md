@@ -110,7 +110,7 @@ El resultado que da TextBlob es: polarity y subjectivity. A mi me va a intersar 
 
 - Como los comentarios están en varios idiomas, utilizo la libreria **spacy** para detectar el idioma y quedarme solo con los que están en inglés, ya que es sobre este idioma sobre el que está entrenado TexBlob
 
-- Lo siguiente que hago es agrupar por listing_id (hay varias reviews por id) y hacer la media de la columna sentiment.
+- Lo siguiente que hago es agrupar por listing_id (hay varias reviews por id) y hacer la media de la columna sentiment obtenida en el paso anterior
 
 - Me creo un nuevo dataset con id y la media del sentiment
 
