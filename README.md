@@ -163,7 +163,7 @@ El código se encuentra dentro de la carpeta code **"3 Distancias.ipynb"**
 Voy a añadir al dataset una columna con la distancia a la estación de metro más cercana de cada vivienda. Obtengo la información desde [esta](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=08055cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD) dirección de Datos Abiertos de Madrid. 
 En el propio código **"3 Distancias.ipynb"** están las instrucciones para bajarnos ese fichero que está en formato .kml y que habrá que transformar a csv.
 
-El fichero contiene información de coordenadas geográficas de las diferentes estaciones de metro de Madrid.
+El fichero "Metro.csv" que obtenemos contiene información de coordenadas geográficas de las diferentes estaciones de metro de Madrid.
 Los pasos seguidos son:
 
 - Usando los datos de longitud y latitud de la vivienda y de las estaciones de metro se cálcula la distancia de cada vivienda a cada una de las estaciones. Lo almaceno en un nuevo dataset
@@ -172,11 +172,29 @@ Los pasos seguidos son:
 - Uno el dataset obtenido de distancias con el dataset de viviendas usando como clave el id
 
 Tras esto he añadido al datset una columna que contiene la distancia a la estación de metro más cercana.
-
 El resultado es el fichero **"listings_sentiment_topic_discstation.csv"** que está en data. 
 
 
+### Distancia al parking público más cercano
 
+Voy a añadir al dataset una columna con la distancia al parking púbico más cercano de cada vivienda. Obtengo la información de los parkings consultando la API de EMT de Madrid 
+
+La documentación de esta API está en esta dirección: https://apidocs.emtmadrid.es/
+
+El primer paso antes de usar la API es registrarse [aquí](https://mobilitylabs.emtmadrid.es/) ya que para usar la API se necesita un token que se genera con el e-mail y la contraseña que hayamos puesto en el registro.
+
+En el propio código **"3 Distancias.ipynb"**  se realiza la comunicación con la API para obtener el fichero
+El fichero "parking.csv" que obtenemos contiene información de coordenadas geográficas de las diferentes parking públicos  de Madrid.
+
+Los pasos seguidos son:
+
+- Usando los datos de longitud y latitud de la vivienda y de los parkings se cálcula la distancia de cada vivienda a cada parking. Lo almaceno en un nuevo dataset
+- Se ordena por el campo calculado de distancia agrupando por el id de la vivienda.
+- Al ordenar de menor a mayor nos quedamos con el primero que nos aparece de cada vivienda eliminando el resto, así me quedo con la distancia más corta
+- Uno el dataset obtenido de distancias con el dataset de viviendas usando como clave el id
+
+Tras esto he añadido al datset una columna que contiene la distancia al parking más cercano.
+El resultado es el fichero **"listings_sentiment_topic_discstation_discparking.csv.csv"** que está en data. 
 
 
 
