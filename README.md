@@ -137,24 +137,19 @@ Los pasos que he realizado son los siguientes:
 - Determino cual es el número óptimo de Topic pero me quedo con 5 por simplicidad
 - Los 5 Topics que resultan son:
 
-        - 1.- Topic General: Este topic es el más confuso. Es un topic genérico que no cuadra dentro de las otras 4 categorías
-        
-        - 2.- Topic Descripcion: Este topic está asociado a la descripción de la propia vivienda	
-        
-        - 3.- Topic Atracciones: Este topic está asociado a los monumentos y lugares de interés cercanos a la vivienda
-        
-        - 4.- Topic Servicios: Este topic está asociado a los servicios de los que dispone la vivienda	
-        
-        - 5.- Topic Transporte: Este topic está asociado al trasporte cercano a al necesario para llegar a la vivienda
+        - 1.Topic General: Este topic es el más confuso. Es un topic genérico que no cuadra dentro de las otras 4 categorías
+        - 2.Topic Descripcion: Este topic está asociado a la descripción de la propia vivienda	        
+        - 3.Topic Atracciones: Este topic está asociado a los monumentos y lugares de interés cercanos a la vivienda
+        - 4.Topic Servicios: Este topic está asociado a los servicios de los que dispone la vivienda	
+        - 5.Topic Transporte: Este topic está asociado al trasporte cercano a al necesario para llegar a la vivienda
 
+- Añado al dataset 5 columnas con cada uno de estos 5 Topics y su correspondiente distribución para cada vivienda
+- Hago lo mismo para las descriciones que están español usando un dataset independiente
+- Cuando tengo mis dos datasets en inglés y en español con las nuevas columnas topics los junto
 
-Determino cuales son los 5 Topics
-Añado a dataset 5 columnas con cada uno de estos 5 Topics y su correspondiente distribución para cada vivienda
-Hago lo mismo para las descriciones que están español usando un dataset independiente
-Cuando tengo mis dos datasets en inglés y en español con las nuevas columnas topics los junto
-Guardo el dataset
+En este momento le hemos añadido al dataet 5 columnas adicionales de topics de la descripción
 
-En este momento tengo el dataset original con una columna de sentiment sobre los reviews y con 5 columnas adicionales de topics de la descripción
+El resultado es el fichero **"listings_sentiment_topic.csv"** que está en data. Durante este análisis se han ido creando ficheros csv intermedios que también están en data
 
 
 
