@@ -118,7 +118,7 @@ El resultado que da TextBlob es: polarity y subjectivity. A mi me va a intersar 
 
 Con esto ya consigo un nuevo dataset al que le añado la columna sentiment correspondiente a los reviews.
 
-El resultado es el fichero "listing_sentiment.csv" que está en data. Durante este análisis se han ido creando ficheros csv intermedios que también están en data
+El resultado es el fichero **"listing_sentiment.csv"** que está en data. Durante este análisis se han ido creando ficheros csv intermedios que también están en data
 
 
 
