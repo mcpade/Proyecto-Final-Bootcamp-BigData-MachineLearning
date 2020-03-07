@@ -241,7 +241,9 @@ Los pasos seguidos son:
 Tras esto he añadido al datset 5 columnas que contiene la distancia a los 5 atracciones más importantes
 El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_discmuseos_discatracciones.csv"** que está en data.
 
+## 6.- Análisis Exploratorio y Procesamiento de Datos
 
+**code: 4 EDA.ipynb**
 
 
 
