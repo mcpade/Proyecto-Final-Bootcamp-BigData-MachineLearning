@@ -145,7 +145,7 @@ Los pasos que he realizado son los siguientes:
 
 - Añado al dataset 5 columnas con cada uno de estos 5 Topics y su correspondiente distribución para cada vivienda
 - Hago lo mismo para las descriciones que están español usando un dataset independiente
-- Cuando tengo mis dos datasets en inglés y en español con las nuevas columnas topics los junto
+- Cuando tengo mis dos datasets en inglés y en español con las nuevas columnas topics los uno 
 
 En este momento le hemos añadido al dataet 5 columnas adicionales de topics de la descripción
 
