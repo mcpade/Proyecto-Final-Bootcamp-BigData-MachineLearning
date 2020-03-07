@@ -100,7 +100,7 @@ Utilizando técnicas de NLP voy a realizar un Sentiment Analysis de los comentar
 El código correspondiente se encuentra dentro de la carpeta Code **"1 Sentimental analysis Reviews.ipynb"**
 Los pasos que he realizado son los siguientes:
 
-- Transformo el fichero reviews.csv en un dataframe y recorro la columna "comments" aplicando TexBlob Sentiment Analysis sobre esa columna. TexBlob es una librearía que hace NLP y está entrenada para comentarios en inglés en redes sociales
+- Transformo el fichero reviews.csv en un dataframe y recorro la columna "comments" aplicando **TexBlob** Sentiment Analysis sobre esa columna. TexBlob es una librearía que hace NLP y está entrenada para comentarios en inglés en redes sociales
 
 https://github.com/sloria/textblob
 
@@ -108,7 +108,7 @@ https://textblob.readthedocs.io/en/latest/quickstart.html#quickstart
 
 El resultado que da TextBlob es: polarity y subjectivity. A mi me va a intersar polarity que puede ir del -1 al 1, siendo 1 el valor más positivo y -1 en valor más negativo
 
-- Como los comentarios están en varios idiomas utilizo la libreria spacy para detectar el idioma y quedarme solo con los que están en inglés ya que es sobre este idioma sobre el que está entrenado TexBlob
+- Como los comentarios están en varios idiomas, utilizo la libreria **spacy** para detectar el idioma y quedarme solo con los que están en inglés, ya que es sobre este idioma sobre el que está entrenado TexBlob
 
 - Lo siguiente que hago es agrupar por listing_id (hay varias reviews por id) y hacer la media de la columna sentiment.
 
