@@ -23,7 +23,7 @@ Actualmente ya hay versiones posteriores pero en el momento del proyecto las fec
 
 ### listing.csv
 
-Este fichero contiene un listado de todas las viviendas con sus correspondientes características. Durante el el primer paso del procesamiento iré eliminando algunas de las características. Muestras a continuación las que iré tratando tras esa limpieza inicial:
+Este fichero contiene un listado de todas las viviendas con sus correspondientes características. Durante el primer paso del procesamiento iré eliminando algunas de las características. Muestro a continuación las que iré tratando tras esa limpieza inicial:
 
 Característica | Descripción
 -------------- | -------------
@@ -70,44 +70,22 @@ instant_bookable | Si la propiedad puede ser reservada al instante sin enviar me
 cancellation_policy | Tipo de política de cancelación
 reviews_per_month | Promedio de comentarios al mes que recibe la vivienda
 
+### reviews.csv
+
+Este fichero contiene un listado con todos los comentarios asociados a las viviendas
+
+Característica | Descripción
+-------------- | -------------
+listing_id | Identificador de la vivienda
+id | Identificador del comentario
+date | Fecha del comentario
+reviewer_id | Identificador del usuario que deja el comentario
+reviewer_name | Nombre del usuario que deja el comentario
+comments | Comentarios
+
+Ambos ficheros se encuentra en la carpeta data de este proyecto
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Una vez descomprimidos ambos ficheros se ve que en "linsting.csv" tenemos el listado de todas las viviendas con sus correspondientes características: 
-
-atos escogido es éste, extraído de Airbnb mediante técnicas de scraping. Dentro de las opciones recomiendo utilizar el extract (“Only the 14780 selected records”), ya que minimiza el tiempo de ejecución y evita problemas de memoria en equipos con menos prestaciones.
 
 
 
