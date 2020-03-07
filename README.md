@@ -222,6 +222,27 @@ Los pasos seguidos son:
 Tras esto he añadido al datset 5 columnas que contiene la distancia a los 5 museos más importantes
 El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_discmuseos.csv"** que está en data.
 
+### Distancia a los 5 lugares/monumentos más importantes de Madrid
+
+Voy a añadir al dataset cinco columnas con la distancia a los 5 lugares/monumentos más importantes de la ciudad de Madrid. En este caso el fichero con las coordenadas geográficas de esos 5 lugares/monumentos de la ciudad de Madrid lo he creado de forma manual.
+El fichero "Atracciones.csv" que está en data contiene las coordenadas geográficade de estos 5 lugares que he escogido que sean:
+
+- Puerta del Sol
+- Plaza Mayor
+- El Retiro
+- Puerta de Alcalá
+- Palacio Real
+
+Los pasos seguidos son:
+
+- Usando los datos de longitud y latitud de la vivienda y de los 5 atracciones cálculo la distancia de una vivienda a cada una de ellos.
+- Añado 5 columnas al dataset original con la distancia de cada vivienda a cada uno de las 5 atracciones
+
+Tras esto he añadido al datset 5 columnas que contiene la distancia a los 5 atracciones más importantes
+El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_discmuseos_discatracciones.csv"** que está en data.
+
+
+
 
 
 
