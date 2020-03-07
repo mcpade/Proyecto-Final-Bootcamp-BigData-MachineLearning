@@ -151,6 +151,45 @@ En este momento le hemos añadido al dataet 5 columnas adicionales de topics de 
 
 El resultado es el fichero **"listings_sentiment_topic.csv"** que está en data. Durante este análisis se han ido creando ficheros csv intermedios que también están en data
 
+## 5.- Cálculo de distancias a puntos de interés
+
+**code: 3 Distancias.ipynb**
+
+Una vez que he visto que en las descripciones de las viviendas son importantes los temas de transportes y atracciones cercanas voy a añadir al dataset las distancias de las viviendas a ciertos puntos de interés.
+El código se encuentra dentro de la carpeta code **"3 Distancias.ipynb"**
+
+### Distancia a la estación de metro más cercana
+
+Voy a añadir al dataset una columna con la distancia a la estación de metro más cercana de cada vivienda. Obtengo la información desde [esta] https://datos.madrid.es/sites/v/index.jsp?vgnextoid=08055cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD dirección de Datos Abiertos de Madrid. 
+En el propio código **"3 Distancias.ipynb"** están las instrucciones para bajarnos ese fichero que está en formato .kml y que habrá que transformar a csv.
+
+El fichero contiene información de coordenadas geográficas de las diferentes estaciones de metro de Madrid.
+Los pasos seguidos son:
+
+- Usando los datos de longitud y latitud de la vivienda y de las estaciones de metro se cálcula la distancia de cada vivienda a cada una de las estaciones. Lo almaceno en un nuevo dataset
+- Se ordena por el campo calculado de distancia agrupando por el id de la vivienda.
+- Al ordenar de menor a mayor nos quedamos con el primero que nos aparece de cada vivienda eliminando el resto, así me quedo con la distancia más corta
+- Uno el dataset obtenido de distancias con el dataset de viviendas usando como clave el id
+
+Tras esto he añadido al datset una columna que contiene la distancia a la estación de metro más cercana.
+
+El resultado es el fichero **"listings_sentiment_topic_discstation.csv"** que está en data. 
+
+
+
+
+
+
+
+Paso 3: Partiendo de la API de datos abiertos de Madrid ver que datos tenía ahí y añadir en el dataset unas columnas de proximidad a museo, proximidad a parking……. Proximidad a monumento…..
+
+                        Añadido al dataset columnas con:
+Distancia al parking más cercano
+Distancia a la estación de metro más cercana, tengo un csv
+Distancias a los 5 museos principales: Museo del Prado, Reina Sofia, Thyssen,  Museo Sorolla, Museo Arqueológico Nacional
+Distancias a los 5 monumentos principales:  Puerta del Sol, Plaza mayor, El Retiro, Puerta de Alcalá, Palacio Real
+
+
 
 
 
