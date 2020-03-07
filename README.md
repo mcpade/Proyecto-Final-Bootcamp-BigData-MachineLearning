@@ -160,7 +160,7 @@ El código se encuentra dentro de la carpeta code **"3 Distancias.ipynb"**
 
 ### Distancia a la estación de metro más cercana
 
-Voy a añadir al dataset una columna con la distancia a la estación de metro más cercana de cada vivienda. Obtengo la información desde [esta] (https://datos.madrid.es/sites/v/index.jsp?vgnextoid=08055cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD) dirección de Datos Abiertos de Madrid. 
+Voy a añadir al dataset una columna con la distancia a la estación de metro más cercana de cada vivienda. Obtengo la información desde [esta](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=08055cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD) dirección de Datos Abiertos de Madrid. 
 En el propio código **"3 Distancias.ipynb"** están las instrucciones para bajarnos ese fichero que está en formato .kml y que habrá que transformar a csv.
 
 El fichero contiene información de coordenadas geográficas de las diferentes estaciones de metro de Madrid.
