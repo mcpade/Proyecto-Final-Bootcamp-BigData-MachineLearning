@@ -136,11 +136,16 @@ Los pasos que he realizado son los siguientes:
 - Utilizo el algoritmo LDA para hacer Topic Modeling sobre la columa description
 - Determino cual es el número óptimo de Topic pero me quedo con 5 por simplicidad
 - Los 5 Topics que resultan son:
+
         - 1.- Topic General: Este topic es el más confuso. Es un topic genérico que no cuadra dentro de las otras 4 categorías
+        
         - 2.- Topic Descripcion: Este topic está asociado a la descripción de la propia vivienda	
-        Topic Atracciones: Este topic está asociado a los monumentos y lugares de interés cercanos a la vivienda
-        Topic Servicios: Este topic está asociado a los servicios de los que dispone la vivienda	
-        Topic Transporte: Este topic está asociado al trasporte cercano a al necesario para llegar a la vivienda
+        
+        - 3.- Topic Atracciones: Este topic está asociado a los monumentos y lugares de interés cercanos a la vivienda
+        
+        - 4.- Topic Servicios: Este topic está asociado a los servicios de los que dispone la vivienda	
+        
+        - 5.- Topic Transporte: Este topic está asociado al trasporte cercano a al necesario para llegar a la vivienda
 
 
 Determino cuales son los 5 Topics
