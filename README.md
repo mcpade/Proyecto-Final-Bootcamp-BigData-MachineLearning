@@ -108,7 +108,7 @@ https://textblob.readthedocs.io/en/latest/quickstart.html#quickstart
 
 El resultado que da TextBlob es: polarity y subjectivity. A mi me va a intersar polarity que puede ir del -1 al 1, siendo 1 el valor más positivo y -1 en valor más negativo
 
-- Como los textos están en varios idiomas utilizo la libreria spacy para detectar el idioma y quedarme solo con los que están en inglés ya que es sobre este idioma sobre el que está entrenado TexBlob
+- Como los comentarios están en varios idiomas utilizo la libreria spacy para detectar el idioma y quedarme solo con los que están en inglés ya que es sobre este idioma sobre el que está entrenado TexBlob
 
 - Lo siguiente que hago es agrupar por listing_id (hay varias reviews por id) y hacer la media de la columna sentiment.
 
