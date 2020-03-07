@@ -122,6 +122,36 @@ El resultado es el fichero **"listing_sentiment.csv"** que está en data. Durant
 
 ## 4.- Topic Modeling - Description
 
+**code: Topic Modeling Descripciones.ipynb**
+
+Utilizando técnicas de NLP voy a realizar un Topic Modeling sobre la columna "description". El objetivo es encontrar los topics principiales sobre los que se habla en esas descripciones de las viviendas. Una vez encontrados se crearán nuevas características correspondientes a estos topics en el dataset "listings". Para cada vivienda se calculará el porcentaje de aparación de cada topic en la descripción y ese valor será añadido como característica en el topic correspondiente.
+
+El código correspondiente se encuentra dentro de la carpeta code **"2 Topic Modeling Descripciones.ipynb"**
+Los pasos que he realizado son los siguientes:
+
+- Como tengo descripciones tanto en inglés como en español realizo topic modeling para cada idioma y luego uno los resultados de ambos idiomas
+- Recorro toda la columna "description" y haciendo uso de la librería **spacy** detecto el idioma añadiendo una nueva columna con ese idioma
+- Me quedo con todos los que están en inglés
+- Hago un preprocesamiento de la característica "description" convirtiendo a minúsculas, quitando stop word...etc
+- Utilizo el algoritmo LDA para hacer Topic Modeling sobre la columa description
+- Determino cual es el número óptimo de Topic pero me quedo con 5 por simplicidad
+- Los 5 Topics que resultan son:
+        Topic General: Este topic es el más confuso. Es un topic genérico que no cuadra dentro de las otras 4 categorías
+        Topic Descripcion: Este topic está asociado a la descripción de la propia vivienda	
+        Topic Atracciones: Este topic está asociado a los monumentos y lugares de interés cercanos a la vivienda
+        Topic Servicios: Este topic está asociado a los servicios de los que dispone la vivienda	
+        Topic Transporte: Este topic está asociado al trasporte cercano a al necesario para llegar a la vivienda
+
+
+Determino cuales son los 5 Topics
+Añado a dataset 5 columnas con cada uno de estos 5 Topics y su correspondiente distribución para cada vivienda
+Hago lo mismo para las descriciones que están español usando un dataset independiente
+Cuando tengo mis dos datasets en inglés y en español con las nuevas columnas topics los junto
+Guardo el dataset
+
+En este momento tengo el dataset original con una columna de sentiment sobre los reviews y con 5 columnas adicionales de topics de la descripción
+
+
 
 
 
