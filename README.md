@@ -29,6 +29,34 @@ Característica | Descripción
 -------------- | -------------
 experiences_offered | Actividades ofrecidas
 host_since | Fecha en que el anfitrión se unió por primera vez a Airbnb
+host_response_time | Cantidad promedio de tiempo que tarda el anfitrión en responder mensajes
+host_response_rate | Proporción de mensajes a los que el anfitrión responde
+host_is_superhost | Si el host es un superhost. Es una marca de calidad
+host_listings_count | Cuántas viviendas tiene el host en total
+host_identity_verified | Si el host ha sido verificado con id
+neighbourhood_cleansed | El barrio de Madrid en el que está la propiedad
+property_type | Tipo de propiedad, por ejemplo casa, apartamento...
+room_type | Tipo de vivienda, por ejemplo: casa completa, habitación privada, compartida
+accommodates | Cuantas personas pueden alojarse en la propiedad
+bathrooms | Número de cuartos de baño
+bedrooms | Número de habitaciones
+beds | Número de camas
+bed_type | Tipo de cama, por ejemplo: cama real, sofá cama
+amenities | Lista de servicios/comodidades
+price | Precio por noche (variable objetivo)
+security_deposit  | Cantidad requerida como deposito
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
