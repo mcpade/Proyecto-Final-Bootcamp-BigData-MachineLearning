@@ -122,11 +122,11 @@ El resultado es el fichero **"listing_sentiment.csv"** que está en data. Durant
 
 ## 4.- Topic Modeling - Description
 
-**code: Topic Modeling Descripciones.ipynb**
+**code: 2 Topic Modeling Descripciones.ipynb**
 
 Utilizando técnicas de NLP voy a realizar un Topic Modeling sobre la columna "description". El objetivo es encontrar los topics principiales sobre los que se habla en esas descripciones de las viviendas. Una vez encontrados se crearán nuevas características correspondientes a estos topics en el dataset "listings". Para cada vivienda se calculará el porcentaje de aparación de cada topic en la descripción y ese valor será añadido como característica en el topic correspondiente.
 
-El código correspondiente se encuentra dentro de la carpeta code **"2 Topic Modeling Descripciones.ipynb"**
+El código se encuentra dentro de la carpeta code **"2 Topic Modeling Descripciones.ipynb"**
 Los pasos que he realizado son los siguientes:
 
 - Como tengo descripciones tanto en inglés como en español realizo topic modeling para cada idioma y luego uno los resultados de ambos idiomas
