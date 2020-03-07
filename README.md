@@ -45,6 +45,51 @@ bed_type | Tipo de cama, por ejemplo: cama real, sofá cama
 amenities | Lista de servicios/comodidades
 price | Precio por noche (variable objetivo)
 security_deposit  | Cantidad requerida como deposito
+cleaning_fee | Cantidad requerida para limpieza
+guests_included | Número de invitados incluidos en el precio de la reserva
+extra_people | Precio añadido por cada huesped adicional a los indicados en guests_included
+minimum_nights | Mínumo número de noches para la estancia
+maximum_nights | Máximo número de noches para la estancia
+calendar_updated | Cuando el anfitrión actualizó por última vez el calendario
+availability_30 | Número de noches disponibles para la reserva en los próximos 30 dias
+availability_60 | Número de noches disponibles para la reserva en los próximos 60 dias
+availability_90 | Número de noches disponibles para la reserva en los próximos 90 dias
+availability_365 | Número de noches disponibles para la reserva en los próximos 365 dias
+number_of_reviews | Cantidad de comentarios que tiene la propiedad
+number_of_reviews_ltm | Cantidad de comentarios que tiene la propiedad en los últimos 12 meses
+first_review | Fecha del primer comentario
+last_review | Fecha del último comentario
+review_scores_rating  | Puntación general de la vivienda
+review_scores_accuracy | Puntuación de la precisión de la descripción
+review_scores_cleanliness | Puntación para la limpieza
+review_scores_checkin | Puntación del proceso de checkin
+review_scores_communication | Puntación para la comunicación con el anfitrión
+review_scores_location | Puntuación para la localización
+review_scores_value | Puntuación de la relación calidad/precio
+instant_bookable | Si la propiedad puede ser reservada al instante sin enviar mensaje al anfitrión
+cancellation_policy | Tipo de política de cancelación
+reviews_per_month | Promedio de comentarios al mes que recibe la vivienda
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
