@@ -93,11 +93,11 @@ Ambos ficheros se encuentra en la carpeta data de este proyecto
 
 ## 3.- Sentiment Analysis - Reviews
 
-**Code: 1 Sentimental analysis Reviews.ipynb**
+**code: 1 Sentimental analysis Reviews.ipynb**
 
 Utilizando técnicas de NLP voy a realizar un Sentiment Analysis de los comentarios contenidos en el fichero "reviews.csv". El objetivo es conseguir un valor para cada uno de esos comentarios aplicando análisis de sentimientos. Posteriormente se hará la media de valor obtenido para todos los comentarios para una misma vivienda y ese resultado lo añadiré como una característica más al dataset "listing.csv" de Airbnb.
 
-El código correspondiente se encuentra dentro de la carpeta Code **"1 Sentimental analysis Reviews.ipynb"**
+El código correspondiente se encuentra dentro de la carpeta code **"1 Sentimental analysis Reviews.ipynb"**
 Los pasos que he realizado son los siguientes:
 
 - Transformo el fichero reviews.csv en un dataframe y recorro la columna "comments" aplicando **TexBlob** Sentiment Analysis sobre esa columna. TexBlob es una librearía que hace NLP y está entrenada para comentarios en inglés en redes sociales
@@ -119,6 +119,8 @@ El resultado que da TextBlob es: polarity y subjectivity. A mi me va a intersar 
 Con esto ya consigo un nuevo dataset al que le añado la columna sentiment correspondiente a los reviews.
 
 El resultado es el fichero **"listing_sentiment.csv"** que está en data. Durante este análisis se han ido creando ficheros csv intermedios que también están en data
+
+## 4.- Topic Modeling - Description
 
 
 
