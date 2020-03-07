@@ -1,0 +1,59 @@
+id;nombre;areacode;coordenadas;direccion
+1;Colón;{'@i:nil': 'true'};[-3.6899392, 40.4247093];Plaza de Colón s/n
+2;Corazón de María II;{'@i:nil': 'true'};[-3.6455254, 40.4385248];C/ Corazón de María (final calle)
+3;Encuentro;{'@i:nil': 'true'};[-3.6513541, 40.4054645];Plaza Encuentro
+4;Nuestra Señora del Recuerdo;28036;[-3.67916, 40.472181];c/ Hiedra, 26
+5;Corona Boreal;{'@i:nil': 'true'};[-3.7832, 40.4568];Plaza Corona Boreal y C/ Marqués Camarines
+6;Avenida de Portugal;28011;[-3.727515, 40.415415];Avda. de Portugal, s/n. Frente al nº 51
+7;Plaza del Carmen;{'@i:nil': 'true'};[-3.7034468, 40.4185861];Plaza del Carmen
+8;Paseo de Recoletos;28001;[-3.691953, 40.421191];Paseo de Recoletos, 4
+9;Condesa de Gavia;{'@i:nil': 'true'};[-3.7019123, 40.4490039];Plaza Condesa de Gavia
+10;Almagro;28010;[-3.69295, 40.43039];c/ Almagro, 11
+11;Santa Ana;{'@i:nil': 'true'};[-3.7008666, 40.4144571];Plaza de Santa Ana
+12;Luna-Tudescos;{'@i:nil': 'true'};[-3.7049889, 40.4215407];P. Sta Mª Soledad Torres Acosta c/v c/Luna)
+13;Jacinto Benavente;28012;[-3.703448, 40.414267];Plaza Jacinto Benavente, s/n
+14;América;{'@i:nil': 'true'};[-3.67669, 40.4380932];Avda. América (intercambiador)
+15;Arquitecto Ribera (Barceló);{'@i:nil': 'true'};[-3.700464, 40.426411];C/ Barceló, 2
+16;Brasil;{'@i:nil': 'true'};[-3.69374, 40.45615];Avda. Brasil (entre General Yagüe y Pedro Texeira)
+17;Casino de la Reina;{'@i:nil': 'true'};[-3.7054501, 40.4066596];C/ Casino
+18;Descalzas;{'@i:nil': 'true'};[-3.707072, 40.418441];Plaza Descalzas y Plaza San Martín
+19;Palacio Municipal de Congresos;{'@i:nil': 'true'};[-3.6160214, 40.46190431];Avda. Capital de España, s/n
+20;Orense;28020;[-3.694009, 40.453019];Avda. General Perón, 27
+21;Daoíz y Velarde;{'@i:nil': 'true'};[-3.6784287, 40.4030883];Avda. Ciudad de Barcelona ( C/ Alberche y C/ Téllez)
+22;Marqués de Salamanca;28006;[-3.679197, 40.430293];Plaza Marques de Salamanca, s/n
+23;Felipe II;{'@i:nil': 'true'};[-3.67567, 40.424015];Avda. Felipe II y C/ Goya)
+24;Fuencarral;{'@i:nil': 'true'};[-3.702573, 40.4294714];C/ Fuencarral, 111 (entre 111 Y 121)
+25;General Yagüe;{'@i:nil': 'true'};[-3.6939585, 40.4543339];Avda. Brasil, 15 Nº15 al 19
+26;Hernani;{'@i:nil': 'true'};[-3.6999184, 40.4482467];C/ Hernani (entre C/ Orense y Comandante Zorita)
+27;José Castán Tobeñas;{'@i:nil': 'true'};[-3.69225, 40.46473];C/ José Castán Tobeñas
+28;Miguel Yuste;{'@i:nil': 'true'};[-3.62371, 40.43733];C/ Miguel Yuste s/n
+29;Plaza de Oriente;{'@i:nil': 'true'};[-3.71305556, 40.42];Plaza de Oriente, 1
+30;Presidente Carmona;{'@i:nil': 'true'};[-3.697261, 40.4541445];Avda. Presidente Carmona
+31;Reyes Magos;{'@i:nil': 'true'};[-3.6759568, 40.4089554];Plaza Reyes Magos
+32;San Cayetano;{'@i:nil': 'true'};[-3.670343, 40.434403];Plaza San Cayetano
+33;Sánchez Bustillo;{'@i:nil': 'true'};[-3.6933423, 40.4088597];C/ Sánchez Bustillo
+34;Serrano II;{'@i:nil': 'true'};[-3.68715, 40.42865];C/ Serrano entre Ortega y Gasset y Hermosilla
+35;Serrano III;{'@i:nil': 'true'};[-3.6884056, 40.4197583];C/ Serrano entre Jorge Juan y Pza. Independencia
+36;Sevilla;{'@i:nil': 'true'};[-3.6992503, 40.418054];C/ Sevilla y C/ Alcalá
+37;Velázquez Ayala;{'@i:nil': 'true'};[-3.68379, 40.42761];C/ Velázquez ( y C/ Ayala)
+38;Velázquez Jorge Juan;{'@i:nil': 'true'};[-3.6771486, 40.4234377];C/ Velázquez ( y C/ Jorge Juan)
+39;Verdaguer y García;{'@i:nil': 'true'};[-3.6546779, 40.4403579];C/ Verdaguer y García
+40;Auditorio;{'@i:nil': 'true'};[-3.6801218, 40.4229427];C/ Príncipe de Vergara (Junto Auditorio)
+41;Cortes;{'@i:nil': 'true'};[-3.6958823, 40.4156855];Plaza de las Cortes
+42;Fernández Shaw;{'@i:nil': 'true'};[-3.668314, 40.4043224];C/ Carlos y Guillermo Fernández Shaw
+43;Montalbán;{'@i:nil': 'true'};[-3.690707, 40.418161];C/ Montalbán (entre C/ Alfonso XI y Pº Prado)
+44;Mostenses;{'@i:nil': 'true'};[-3.7089974, 40.4235602];Plaza Mostenses y C/ Ricardo León
+45;Museo de la ciudad;{'@i:nil': 'true'};[-3.6779271, 40.4474968];C/ Príncipe de Vergara, 152 ( y C/ Pechuán )
+46;Olavide;{'@i:nil': 'true'};[-3.7010275, 40.4326973];Plaza de Olavide
+47;Plaza de España;{'@i:nil': 'true'};[-3.711583, 40.423636];Plaza de España
+48;Plaza del Rey;{'@i:nil': 'true'};[-3.6963131, 40.4200305];Plaza del Rey ( y C/ Barquillo C/V C/ Infantas)
+49;Plaza Mayor;{'@i:nil': 'true'};[-3.7066676, 40.4152721];Plaza Mayor
+50;Velázquez Juan Bravo;{'@i:nil': 'true'};[-3.6834, 40.4321];C/ Velázquez ( y C/ Juán Bravo)
+51;Díaz Porlier;{'@i:nil': 'true'};[-3.675167, 40.4345198];C/Diego de León,64(Príncipe de Vergara-Cde. Peñalver)
+52;República Dominicana;{'@i:nil': 'true'};[-3.67647, 40.45869];Pza Rep Dominicana C/Costa Rica y C/Alberto Alcocer
+53;Serrano I;{'@i:nil': 'true'};[-3.6872468, 40.4359971];C/Serrano entre Hnos. Becquer y Marq. de Villamejor
+54;Marqués de Urquijo;{'@i:nil': 'true'};[-3.7188502, 40.4298028];Marq de Urquijo(entre C/Princesa y J. Álv. Mendiz.
+55;Puerta Toledo;{'@i:nil': 'true'};[-3.7110512, 40.407036];Glorieta Puerta Toledo C/V Cptan. Salazar Martínez
+56;Villa de París;28004;[-3.693658, 40.425848];Plaza Villa de París
+57;Garaje Centro;28012;[-3.703171, 40.41303];C/ Relatores, 11
+58;Pedro Zerolo;28004;[-3.699282, 40.420653];Plaza Pedro Zerolo, s/n
