@@ -291,14 +291,14 @@ Lasso | 0.323 | 0.7056
 Boosted Tree | 0.281 | 0.7773
 SVR | 0.301 | 0.7429
 
-Según los resultados anteriores el modelo que escojo es el Gradiente Boosted Tree. Los parámetros concretos de este modelo son:
+Según los resultados anteriores el modelo que escojo es el **Gradiente Boosted Tree**. Los parámetros concretos de este modelo son:
 - Niteraciones = 2000
 - learning_rate = 0.05
 - profundidad = 6
 
 A continuación he realizado una serie de pruebas para intentar mejorar aún más este modelo:
 
-- Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Resultado: 
+- Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Resultado: Mejora
   - Niteraciones = 1000
   - learning_rate = 0.05
   - profundidad = 6
@@ -312,6 +312,8 @@ A continuación he realizado una serie de pruebas para intentar mejorar aún má
    - profundidad = 6
    - RMSE Modelo (test) : 0.278
    - R2 test = 0.7819
+   
+- Modificación de profundidad a 4   
   
   
 
