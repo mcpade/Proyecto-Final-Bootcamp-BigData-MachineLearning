@@ -31,7 +31,7 @@ Este proyecto tiene la siguiente estructura
 - data: Contiene los ficheros csv con los diferentes datos utilizados como datasets del proyecto. Aquí se van almacenando todos los ficheros intermedios que se van generando y que se usan en los distintos módulos python.
 - model: Contiene los dos modelos resultantes tras la evaluación de modelos de Machine-Learning y DeepLearning
 
-Este proyecto se ha desarrollado utilizando **Google Colab** y las carpetas para almacenamiento están en **Google Drive**
+Este proyecto se ha desarrollado utilizando **Google Colab** y las carpetas para almacenamiento están en **Google Drive**.
 Una forma de montar la estructura de este proyecto será subir todo a Google Drive. Al principio de cada modulo python se define la ruta Google Drive donde está el proyecto. Esta variable se tendrá que cambiar en cada módulo para poner la ruta Google Drive donde se quiera alojar.
 
 ## 1.- Objetivo<a name="id2"></a>
