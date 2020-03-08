@@ -362,6 +362,15 @@ Antes de comenzar con el modelado normalizaré las variables de entrada utilizan
 
 Muestro a continuación los diferentes modelos de Redes Neuronales que he utilizado
 
+ Modelo | RMSE (train) | RMSE (test) | R2 (train) | R2 (test)
+--------|--------------|-------------|------------|-----------
+Red Neuronal con 3 capas | 0.0141 | 0.1448 | 0.9602 | 0.5903
+Red neuronal con 4 capas, regularización L1 y más épocas | 0.1034 | 0.1006 | 0.708 | 0.7152
+Red neuronal con 4 capas, regularización Droput 0.5 y más épocas | 0.1151 | 0.1305 | 0.6748 | 0.6307
+Red neuronal con 4 capas, regularización Dropout 0.2 y mayor batch size | 0.0404 | 0.1245 | 0.8859 | 0.6477
+
+
+
 - Modelo 1 - Red Neuronal con 3 capas: 
 
 N. Capas | F. activación | F. de salida | F. de pérdidas | Optimizador | N. epocas | batch_size
