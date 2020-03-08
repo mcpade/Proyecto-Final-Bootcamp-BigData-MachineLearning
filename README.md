@@ -299,10 +299,19 @@ Según los resultados anteriores el modelo que escojo es el Gradiente Boosted Tr
 A continuación he realizado una serie de pruebas para intentar mejorar aún más este modelo:
 
 - Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Resultado: 
-  RMSE Modelo (test) : 0.278
-  R2 test = 0.7819
+  - Niteraciones = 1000
+  - learning_rate = 0.05
+  - profundidad = 6
+  - RMSE Modelo (test) : 0.278
+  - R2 test = 0.7819
   
-- Modificación de Niteracions y learning Rate. Mantengo profundidad 6  
+- Modificación de Niteracions y learning Rate. Mantengo profundidad 6. Resultado: Ha aumentado el número de iteracciones óptimas pero el resultado sigue siendo el mismo.  
+
+   - Niteraciones = 1200
+   - learning_rate = 0.05
+   - profundidad = 6
+   - RMSE Modelo (test) : 0.278
+   - R2 test = 0.7819
   
   
 
