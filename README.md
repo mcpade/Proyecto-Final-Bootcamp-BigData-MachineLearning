@@ -413,7 +413,17 @@ RMSE Modelo (test) | R2 test
 
 El modelo está almacenado en la carpeta model del proyecto con el nombre **RedNeuronal.sav**
 
-## 9.- Conclusión del proyecto. Selección del mejor modelo
+## 9.- Conclusión del proyecto. 
+
+Esta es una de esas situaciones en las que deep learning simplemente no es necesario para la predicción, y un modelo de machine learning funciona mejor. Sin embargo, incluso en el modelo con mejor rendimiento, éste solo pudo explicar el 77% de la variación en el precio. El 23% restante probablemente esté compuesto por características que no estaban presentes en los datos. Es probable que una proporción significativa de esta varianza inexplicada se deba a las fotos de las vivendas. Las fotos de propiedades en Airbnb son muy importantes para alentar a los huéspedes a reservar, por lo que se puede esperar que tengan un impacto significativo en el precio: mejores fotos (principalmente propiedades y muebles de mejor calidad, pero también fotografías de mejor calidad) equivalen a precios más altos.
+
+El problema que tenemos con el dataset de Airbnb es que para las fotos únicamente nos proporciona una URL que nos lleva a una única foto de la vivienda. Basta con echar un vistazo a estas fotos para comprobar que son de diversas estancias, de exteriores, hasta de mascotas. 
+Esto se pudo ver en una de las prácticas del Bootcamp en las que se utilizó redes convolucionales para intentar predecir el precio en base a las fotos y los resultados no fueron nada buenos, de ahí que haya decidido no incluirlo en este proyecto final
+Para poder hacer un entranamiento correcto se debería tener más imagenes de la vivienda y además se debería clasificar por distintos tipos de estancia. Una vez separadas se podría montar una imagen compuesta a base de varias estancias para cada anuncio o bien entrenar solo con las fotos de determinada tipo de estancia: salón, cocina.....
+
+Esto queda para una mejora futura de este proyecto
+
+
 
 
 
