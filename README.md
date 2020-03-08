@@ -4,9 +4,9 @@ Nombre: María Araceli Paredes Delgado
 Fecha: marzo - 2020
 Bootcamp: BIG DATA & MACHINE LEARNING - KEEPCODING
 
-**Índice**   
-0. [Estructura del proyecto](#id1)
-1. [1.- Objetivo](#id2)
+## Índice 
+[Estructura del proyecto](#id1)
+[Objetivo](#id2)
 
 
 ## 0.- Estructura del proyecto<a name="id1"></a>
