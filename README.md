@@ -1,10 +1,19 @@
 # Proyecto Final: Bootcamp BigData&MachineLearning
 
-## 0.- Estructura del proyecto
+Nombre: María Araceli Paredes Delgado
+Fecha: marzo - 2020
+Bootcamp: BIG DATA & MACHINE LEARNING - KEEPCODING
+
+**Índice**   
+0. [Estructura del proyecto](#id1)
+1. [1.- Objetivo](#id2)
+
+
+## 0.- Estructura del proyecto<a name="id1"></a>
 
 Descripción de las carpeta y comentario sobre google colab
 
-## 1.- Objetivo
+## 1.- Objetivo<a name="id2"></a>
 
 Airbnb es un mercado comunitario para alquileres a corto plazo que sirve para publicar, dar publicidad y reservar alojamiento de forma económica en más de 190 países a través de internet. Es uno de los sistemas mas éxitos de la economía colaborativa – sistema económico en el que se comparten e intercambian bienes y servicios entre particulares a través de plataformas digitales -.
 Éste sistema permite al usuario encontrar alojamiento, con la diferencia de que no será en un hotel sino en el hogar de una persona que puede incluso estar viviendo en él. 
