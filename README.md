@@ -13,7 +13,10 @@ Bootcamp: BIG DATA & MACHINE LEARNING - KEEPCODING
 3. [Sentiment Analysis - Reviews](#id4)
 4. [Topic Modeling - Description](#id5)
 5. [Cálculo de distancias a puntos de interés](#id6)
-- [Distancia a la estación de metro más cercana](#id11)
+   - [Distancia a la estación de metro más cercana](#id11)
+   - [Distancia al parking público más cercano](#id12)
+   - [Distancia a los 5 museos más importantes de Madrid](#id13)
+   - [Distancia a los 5 lugares/monumentos más importantes de Madrid](#id14)
 6. [Limpieza, Análisis Exploratorio y Procesamiento de Datos](#id7)
 7. [Modelado con algoritmos de Machine Learning](#id8)
 8. [Modelado con algoritmos de Deep Learning](#id9)
@@ -195,7 +198,7 @@ Tras esto he añadido al datset una columna que contiene la distancia a la estac
 El resultado es el fichero **"listings_sentiment_topic_discstation.csv"** que está en data. 
 
 
-### Distancia al parking público más cercano
+### Distancia al parking público más cercano<a name="id12"></a>
 
 Voy a añadir al dataset una columna con la distancia al parking púbico más cercano de cada vivienda. Obtengo la información de los parkings consultando la API de EMT de Madrid 
 
@@ -217,7 +220,7 @@ Tras esto he añadido al datset una columna que contiene la distancia al parking
 El resultado es el fichero **"listings_sentiment_topic_discstation_discparking.csv"** que está en data. 
 
 
-### Distancia a los 5 museos más importantes de Madrid
+### Distancia a los 5 museos más importantes de Madrid<a name="id13"></a>
 
 Voy a añadir al dataset cinco columnas con la distancia a los 5 museos más importantes de la ciudad de Madrid. Podría hacer manualmente un fichero que contuviese las coordenadas geográficas de estos 5 museos pero voy a utilizar la API de Datos Abiertos de Madrid para obtener el listado de todos los museos y de ahí escoger los que me interese por si en algún momento quiero cambiar y poner otros museos.
 
@@ -242,7 +245,7 @@ Los pasos seguidos son:
 Tras esto he añadido al datset 5 columnas que contiene la distancia a los 5 museos más importantes
 El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_discmuseos.csv"** que está en data.
 
-### Distancia a los 5 lugares/monumentos más importantes de Madrid
+### Distancia a los 5 lugares/monumentos más importantes de Madrid<a name="id14"></a>
 
 Voy a añadir al dataset cinco columnas con la distancia a los 5 lugares/monumentos más importantes de la ciudad de Madrid. En este caso el fichero con las coordenadas geográficas de esos 5 lugares/monumentos de la ciudad de Madrid lo he creado de forma manual.
 El fichero "Atracciones.csv" que está en data contiene las coordenadas geográficade de estos 5 lugares que he escogido que sean:
