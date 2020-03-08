@@ -25,7 +25,14 @@ Bootcamp: BIG DATA & MACHINE LEARNING - KEEPCODING
 
 ## 0.- Estructura del proyecto<a name="id1"></a>
 
-Descripción de las carpeta y comentario sobre google colab
+Este proyecto tiene la siguiente estructura
+
+- code: Contiene los distintos módulos en python correspondientes al desarrollo del proyecto. La numeración que tienen los módulos python coincide con el orden de desarrollo del proyecto.
+- data: Contiene los ficheros csv con los diferentes datos utilizados como datasets del proyecto. Aquí se van almacenando todos los ficheros intermedios que se van generando y que se usan en los distintos módulos python.
+- model: Contiene los dos modelos resultantes tras la evaluación de modelos de Machine-Learning y DeepLearning
+
+Este proyecto se ha desarrollado utilizando **Google Colab** y las carpetas para almacenamiento están en **Google Drive**
+Una forma de montar la estructura de este proyecto será subir todo a Google Drive. Al principio de cada modulo python se define la ruta Google Drive donde está el proyecto. Esta variable se tendrá que cambiar en cada módulo para poner la ruta Google Drive donde se quiera alojar.
 
 ## 1.- Objetivo<a name="id2"></a>
 
