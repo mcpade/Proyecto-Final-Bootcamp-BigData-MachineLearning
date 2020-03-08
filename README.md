@@ -314,6 +314,11 @@ A continuación he realizado una serie de pruebas para intentar mejorar aún má
    - R2 test = 0.7819
    
 - Modificación de profundidad a 4   
+   - Niteraciones = 1500
+   - learning_rate = 0.05
+   - profundidad = 4
+   - RMSE Modelo (test) : 0.281
+   - R2 test = 0.7766
   
   
 
