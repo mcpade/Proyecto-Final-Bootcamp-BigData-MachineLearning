@@ -362,7 +362,7 @@ Antes de comenzar con el modelado normalizaré las variables de entrada utilizan
 
 Muestro a continuación los diferentes modelos de Redes Neuronales que he utilizado
 
-- Red Neuronal con 3 capas: 
+- Modelo 1 - Red Neuronal con 3 capas: 
 
 N. Capas | F. activación | F. de salida | F. de pérdidas | Optimizador | N. epocas | batch_size
 ---------|---------------|--------------|----------------|-------------|-----------|------------ 
@@ -376,11 +376,11 @@ RMSE Modelo (test) | R2 training | R2 test
 
 En este primer intento se ve que el resultado en train es mucho mejor que el que obtenermos en test lo cual indica que tenemos un problema de overfitting. Voy a aplicar regularización para intentar solucionar el problema
 
-- Red neuronal con 4 capas, regularización L1 y más épocas
+- Modelo 2 - Red neuronal con 4 capas, regularización L1 y más épocas
 
 N. Capas | F. activación | F. de salida | F. de pérdidas | Regularización | Optimizador | N. epocas | batch_size
 ---------|---------------|--------------|----------------|----------------|-------------|-----------|------------
-4 | relu | lineal | mean squered_error | l1 | Adam  | 150 | 256
+4 | relu | lineal | mean squered_error | L1 | Adam  | 150 | 256
 
 Resultado
 
@@ -388,6 +388,34 @@ RMSE Modelo (test) | R2 training | R2 test
 -------------------|-------------|---------
 0.1006 | 0.708 | 0.7152
 
+Este modelo se comporta mucho mejor. Se ha eliminado el problema de overfitting que teníamos antes y ha mejorado también r2
 
+- Modelo 3 - Red neuronal con 4 capas, regularización Droput 0.5 y más épocas
+
+N. Capas | F. activación | F. de salida | F. de pérdidas | Regularización | Optimizador | N. epocas | batch_size
+---------|---------------|--------------|----------------|----------------|-------------|-----------|------------
+4 | relu | lineal | mean squered_error | Dropout 0.5 | Adam  | 260 | 256
+
+Resultado
+
+RMSE Modelo (test) | R2 training | R2 test 
+-------------------|-------------|---------
+0.1305 | 0.6748 | 0.6307
+
+El comportamiento de este modelo es algo peor que el de la regularización L1
+
+- Modelo 4 - Red neuronal con 4 capas, regularización Dropout 0.2 y mayor batch size
+
+N. Capas | F. activación | F. de salida | F. de pérdidas | Regularización | Optimizador | N. epocas | batch_size
+---------|---------------|--------------|----------------|----------------|-------------|-----------|------------
+4 | relu | lineal | mean squered_error | Dropout 0.2 | Adam  | 300 | 512
+
+Resultado
+
+RMSE Modelo (test) | R2 training | R2 test 
+-------------------|-------------|---------
+0.1245 | 0.8859 | 0.6477
+
+Esto ha emperado el modelo.Seguimos quedándonos por tanto con el modelo 2 y la regularización L1
 
 
