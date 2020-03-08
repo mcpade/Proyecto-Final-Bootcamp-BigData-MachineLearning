@@ -322,12 +322,35 @@ Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
 -------------|---------------|-------------|--------------------|---------- 
 1500 | 0.05 | 4 | 0.281 | 0.7766
 
+Resultado: Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo por lo que me quedo de momento con esta solución
+
+- Modificación de Niteracions y learning Rate. Mantengo profundidad 4. 
+
+Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
+-------------|---------------|-------------|--------------------|---------- 
+1500 | 0.05 | 4 | 0.281 | 0.7766
+
+Los parámetros óptimos vuelven a ser los mismos que en la anterior prueba
+
+### Conclusión del modelado con algoritmos de Machine Learning
+
+El modelo que mejor resultados me da es el **"Gradient Boosted Tree"** con los siguientes parámetros:
    
-  
-  
+  Niteraciones | learning_rate | profundidad 
+-------------|---------------|--------------
+1500 | 0.05 | 4 
 
+Con esto consigo para mi conjunto de test y, tras aplicar todas las transformaciones necesarias, estos resultados:
 
+RMSE Modelo (test) | R2 test 
+-------------|---------------
+0.7766 | 0.281  
 
+Las tres característica más importantes para el cálculo del precio en orden son:
+
+- Room Type: Entire home/apt
+- Accomodates
+- Bathrooms
 
 
 
