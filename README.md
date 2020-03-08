@@ -377,7 +377,23 @@ N. Capas | F. activación | F. salida | F. pérdidas | Regularización | Optimiz
 ---------|---------------|-----------|-------------|----------------|-------------|-----------|------------
 4 | Relu | linear | mean squered_error | L1 | Adam | 150 | 256
 
+A continuación he realizado una serie de pruebas para intentar mejorar aún más este modelo:
 
+- Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación.
+
+RMSE (train) | RMSE (test) | R2 (train) | R2 (test)
+-------------|-------------|------------|-----------
+0.1071 | 0.1039 | 0.6974 | 0.7061
+
+Conseguimos resultados similares al del modelo 2 pero he eliminado 30 características con lo que la complejidad es menor por lo que nos quedamos de momento con esta opción
+
+- Red neuronal con 5 capas, regularización L1 y eliminación de características correladas
+
+RMSE (train) | RMSE (test) | R2 (train) | R2 (test)
+-------------|-------------|------------|-----------
+0.1064 | 0.1031 | 0.6995 | 0.7083
+
+Se consigue muy poca mejora para el aumento de complejidad. Con lo cual me quedo con el modelo anterior
 
 
 
