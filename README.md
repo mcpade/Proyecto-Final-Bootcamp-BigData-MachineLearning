@@ -334,7 +334,7 @@ Los parámetros óptimos vuelven a ser los mismos que en la anterior prueba
 
 ### Conclusión del modelado con algoritmos de Machine Learning
 
-El modelo que mejor resultados me da es el **"Gradient Boosted Tree"** con los siguientes parámetros:
+El modelo que mejor resultados me da es el **"Gradient Boosted Tree"** con la eliminación de las características reviews particulares. Los parámetros son los siguientes:
    
   Niteraciones | learning_rate | profundidad 
 -------------|---------------|--------------
@@ -395,6 +395,19 @@ RMSE (train) | RMSE (test) | R2 (train) | R2 (test)
 
 Se consigue muy poca mejora para el aumento de complejidad. Con lo cual me quedo con el modelo anterior
 
+### Conclusión del modelado con algoritmos de Deep Larning
+
+El modelo que mejor resultados me da es una **Red Neuronal con 4 capas, regularización L1, optimización de Adam y eliminación de características review correladas** Los parámetros son los siguientes:
+   
+ N. Capas | F. activación | F. salida | F. pérdidas | Regularización | Optimizador | N. epocas | Batch_size
+---------|---------------|-----------|-------------|----------------|-------------|-----------|------------
+4 | Relu | linear | mean squered_error | L1 | Adam | 150 | 256  
+  
+Con esto consigo para mi conjunto de test y, tras aplicar todas las transformaciones necesarias, estos resultados:
+
+RMSE Modelo (test) | R2 test 
+-------------|---------------
+0.1031 | 0.7083  
 
 
 
