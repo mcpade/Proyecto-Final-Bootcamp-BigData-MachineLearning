@@ -272,7 +272,13 @@ El código **"4 EDA.ipynb"** se encarga de esta tarea. Pasos realizados:
 
 Como último punto se deben aplicar todas las transformaciones anteriones a las muestras de test
 
+## 7.- Modelado con algoritmos de Machine Learning
 
+**code: 5 Modelado con algoritmos de Machine Learning - ML.ipynb**
+
+Una vez que ya tenemos los datos limpios y procesados vamos a aplicar diferentes modelos "Supervised Machine Learning" y los compararemos entre si. La métrica que usaré al ser un problema de regresión es el RMSE (Error cuadrático medio).
+
+Antes de comenzar con el modelado normalizaré las variables de entrada. Normalizar significa, en este caso, comprimir o extender los valores de la variable para que estén en un rango definido. Utilizo el Standard Scaler
 
 
 
