@@ -352,6 +352,8 @@ Las tres característica más importantes para el cálculo del precio en orden s
 - Accomodates
 - Bathrooms
 
+El modelo está almacenado en la carpeta model del proyecto con el nombre **GradientBoostedTree.sav**
+
 ## 8.- Modelado con algoritmos de Deep Learning
 
 **code: 6 Modelado con algoritmos de Deep Learning.ipynb**
@@ -408,6 +410,16 @@ Con esto consigo para mi conjunto de test y, tras aplicar todas las transformaci
 RMSE Modelo (test) | R2 test 
 -------------|---------------
 0.1031 | 0.7083  
+
+El modelo está almacenado en la carpeta model del proyecto con el nombre **RedNeuronal.sav**
+
+## 9.- Conclusión del proyecto. Selección del mejor modelo
+
+
+
+
+
+
 
 
 
