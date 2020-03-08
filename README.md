@@ -376,6 +376,18 @@ RMSE Modelo (test) | R2 training | R2 test
 
 En este primer intento se ve que el resultado en train es mucho mejor que el que obtenermos en test lo cual indica que tenemos un problema de overfitting. Voy a aplicar regularización para intentar solucionar el problema
 
+- Red neuronal con 4 capas, regularización L1 y más épocas
+
+N. Capas | F. activación | F. de salida | F. de pérdidas | Regularización | Optimizador | N. epocas | batch_size
+---------|---------------|--------------|----------------|----------------|-------------|-----------|------------
+4 | relu | lineal | mean squered_error | l1 | Adam  | 150 | 256
+
+Resultado
+
+RMSE Modelo (test) | R2 training | R2 test 
+-------------------|-------------|---------
+0.1006 | 0.708 | 0.7152
+
 
 
 
