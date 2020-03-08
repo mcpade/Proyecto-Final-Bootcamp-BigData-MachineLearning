@@ -261,7 +261,7 @@ El código **"4 EDA.ipynb"** se encarga de esta tarea. Pasos realizados:
 - Eliminamos valores nulos bien eliminando esas observaciones o dándoles algún valor que puede ser la mediana, el valor más frecuente o un valor 0 dependiendo de la característica
 - Eliminamos características que solo tengan un valor (o un porcentaje muy elevado de un mismo valor)  y que por tanto no nos aportan información al modelo
 - Generación de nuevas características en base a las existentes
-- Transformación de algunas características numéricas en categóricas agrupándo por valores
+- Transformación de algunas características numéricas en categóricas agrupándolas por valores
 - Análisis exploratorio de variables de tipo numérico
 - Tratamiento de outliers
 - Análisis exploratorio de variables de tipo categórico
