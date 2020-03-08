@@ -1,12 +1,22 @@
 # Proyecto Final: Bootcamp BigData&MachineLearning
 
 Nombre: María Araceli Paredes Delgado
+
 Fecha: marzo - 2020
+
 Bootcamp: BIG DATA & MACHINE LEARNING - KEEPCODING
 
 ## Índice 
 0. [Estructura del proyecto](#id1)
 1. [Objetivo](#id2)
+2. [Conjunto de datos](#id3)
+3. [Sentiment Analysis - Reviews](#id4)
+4. [Topic Modeling - Description](#id5)
+5. [Cálculo de distancias a puntos de interés](#id6)
+6. [Limpieza, Análisis Exploratorio y Procesamiento de Datos](#id7)
+7. [Modelado con algoritmos de Machine Learning](#id8)
+8. [Modelado con algoritmos de Deep Learning](#id9)
+9. [Conclusión del proyecto](#id10)
 
 
 ## 0.- Estructura del proyecto<a name="id1"></a>
@@ -26,7 +36,7 @@ El fin último sería tener una herramienta a disposición de los anfitriones qu
 
 El modelado para este proyecto se ha realizado para la ciudad de Madrid
 
-## 2.- Conjunto de datos
+## 2.- Conjunto de datos<a name="id3"></a>
 
 El conjunto principal de datos lo obtengo de Insideairbnb, en concreto en [esta](http://insideairbnb.com/get-the-data.html) dirección podemos encontrar dataset de diferentes ciudades. De aquí nos descargamos para la ciudad de Madrid:
 - "listings.csv.gz"
@@ -100,7 +110,7 @@ comments | Comentarios
 Ambos ficheros se encuentra en la carpeta data de este proyecto
 
 
-## 3.- Sentiment Analysis - Reviews
+## 3.- Sentiment Analysis - Reviews<a name="id4"></a>
 
 **code: 1 Sentimental analysis Reviews.ipynb**
 
@@ -129,7 +139,7 @@ Con esto ya consigo un nuevo dataset al que le añado la columna sentiment corre
 
 El resultado es el fichero **"listing_sentiment.csv"** que está en data. Durante este análisis se han ido creando ficheros csv intermedios que también están en data
 
-## 4.- Topic Modeling - Description
+## 4.- Topic Modeling - Description<a name="id5"></a>
 
 **code: 2 Topic Modeling Descripciones.ipynb**
 
@@ -160,7 +170,7 @@ En este momento le hemos añadido al dataet 5 columnas adicionales de topics de 
 
 El resultado es el fichero **"listings_sentiment_topic.csv"** que está en data. Durante este análisis se han ido creando ficheros csv intermedios que también están en data
 
-## 5.- Cálculo de distancias a puntos de interés
+## 5.- Cálculo de distancias a puntos de interés<a name="id6"></a>
 
 **code: 3 Distancias.ipynb**
 
@@ -250,7 +260,7 @@ Los pasos seguidos son:
 Tras esto he añadido al datset 5 columnas que contiene la distancia a los 5 atracciones más importantes
 El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_discmuseos_discatracciones.csv"** que está en data.
 
-## 6.- Limpieza, Análisis Exploratorio y Procesamiento de Datos
+## 6.- Limpieza, Análisis Exploratorio y Procesamiento de Datos<a name="id7"></a>
 
 **code: 4 EDA.ipynb**
 
@@ -281,7 +291,7 @@ El código **"4 EDA.ipynb"** se encarga de esta tarea. Pasos realizados:
 
 Como último punto se deben aplicar todas las transformaciones anteriones a las muestras de test
 
-## 7.- Modelado con algoritmos de Machine Learning
+## 7.- Modelado con algoritmos de Machine Learning<a name="id8"></a>
 
 **code: 5 Modelado con algoritmos de Machine Learning - ML.ipynb**
 
@@ -363,7 +373,7 @@ Las tres característica más importantes para el cálculo del precio en orden s
 
 El modelo está almacenado en la carpeta model del proyecto con el nombre **GradientBoostedTree.sav**
 
-## 8.- Modelado con algoritmos de Deep Learning
+## 8.- Modelado con algoritmos de Deep Learning<a name="id9"></a>
 
 **code: 6 Modelado con algoritmos de Deep Learning.ipynb**
 
@@ -422,7 +432,7 @@ RMSE Modelo (test) | R2 test
 
 El modelo está almacenado en la carpeta model del proyecto con el nombre **RedNeuronal.sav**
 
-## 9.- Conclusión del proyecto. 
+## 9.- Conclusión del proyecto.<a name="id10"></a> 
 
 Esta es una de esas situaciones en las que deep learning simplemente no es necesario para la predicción, y un modelo de machine learning funciona mejor. Sin embargo, incluso en el modelo con mejor rendimiento, éste solo pudo explicar el 77% de la variación en el precio. El 23% restante probablemente esté compuesto por características que no estaban presentes en los datos. Es probable que una proporción significativa de esta varianza inexplicada se deba a las fotos de las vivendas. Las fotos de propiedades en Airbnb son muy importantes para alentar a los huéspedes a reservar, por lo que se puede esperar que tengan un impacto significativo en el precio: mejores fotos (principalmente propiedades y muebles de mejor calidad, pero también fotografías de mejor calidad) equivalen a precios más altos.
 
