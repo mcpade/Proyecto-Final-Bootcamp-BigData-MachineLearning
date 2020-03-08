@@ -292,33 +292,37 @@ Boosted Tree | 0.281 | 0.7773
 SVR | 0.301 | 0.7429
 
 Según los resultados anteriores el modelo que escojo es el **Gradiente Boosted Tree**. Los parámetros concretos de este modelo son:
-- Niteraciones = 2000
-- learning_rate = 0.05
-- profundidad = 6
+
+Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
+-------------|---------------|-------------|--------------------|---------- 
+2000 | 0.05 | 6 | 0.281 | 0.7773
 
 A continuación he realizado una serie de pruebas para intentar mejorar aún más este modelo:
 
-- Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Resultado: Mejora
-  - Niteraciones = 1000
-  - learning_rate = 0.05
-  - profundidad = 6
-  - RMSE Modelo (test) : 0.278
-  - R2 test = 0.7819
-  
-- Modificación de Niteracions y learning Rate. Mantengo profundidad 6. Resultado: Ha aumentado el número de iteracciones óptimas pero el resultado sigue siendo el mismo.  
+- Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación.
 
-   - Niteraciones = 1200
-   - learning_rate = 0.05
-   - profundidad = 6
-   - RMSE Modelo (test) : 0.278
-   - R2 test = 0.7819
+Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
+-------------|---------------|-------------|--------------------|---------- 
+1000 | 0.05 | 6 | 0.278 | 0.7819
+
+Se consigue una mejora de resultados y encima hemos quitado complejidad al modelo
+
+  
+- Modificación de Niteracions y learning Rate. Mantengo profundidad 6. 
+
+Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
+-------------|---------------|-------------|--------------------|---------- 
+1200 | 0.05 | 6 | 0.278 | 0.7819
+
+Resultado: Ha aumentado el número de iteracciones óptimas pero el resultado sigue siendo el mismo.    
    
 - Modificación de profundidad a 4   
-   - Niteraciones = 1500
-   - learning_rate = 0.05
-   - profundidad = 4
-   - RMSE Modelo (test) : 0.281
-   - R2 test = 0.7766
+
+Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
+-------------|---------------|-------------|--------------------|---------- 
+1500 | 0.05 | 4 | 0.281 | 0.7766
+
+   
   
   
 
