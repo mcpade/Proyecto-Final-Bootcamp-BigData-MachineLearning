@@ -241,9 +241,37 @@ Los pasos seguidos son:
 Tras esto he añadido al datset 5 columnas que contiene la distancia a los 5 atracciones más importantes
 El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_discmuseos_discatracciones.csv"** que está en data.
 
-## 6.- Análisis Exploratorio y Procesamiento de Datos
+## 6.- Limpieza, Análisis Exploratorio y Procesamiento de Datos
 
 **code: 4 EDA.ipynb**
+
+El preprocesamiento y la limpieza de datos son tareas importantes que se deben llevar a cabo para que un conjunto de datos se pueda usar para el entrenamiento de modelo. Con el análisis exploratorio de datos realizamos un tratamiento estadístico de las muestras que nos permite ir analizando las posibles relaciones o visualizando conexiones entre ciertas variables. Se utilizan herramientas estadísticas junto con algunas visualizaviones para entender un poco más los datos de los que disponemos.
+
+El código **" EDA.ipynb"** se encarga de esta tarea. Pasos realizados:
+
+- Comprobar los tipos de datos de las características
+- División en train (70%) y test (30%) antes de comenzar cualquier tipo de limpieza y procesamiento
+- Eliminación de caracterísitcas con URLs y textos 
+- Eliminación de caracteríticas con la mayoría de valores nulos
+- Eliminación de características que contienen información relacionada (se ve a simple vista sin necesidad de análisis de correlación)
+- Eliminación de algunos campos calculados
+- Transformación de las características con valores boolenaos "f", "t" a valores numéricos "0", "1"
+- Análisis de las varibles de localización. Nos quedamos con una de ellas para el análisis y se elimina el resto
+- Limpieza de columnas individuales. Se quitan caracteres como "$" 
+- Eliminamos valores nulos bien eliminando esas observaciones o dándoles algún valor que puede ser la mediana, el valor más frecuente o un valor 0 dependiendo de la característica
+- Eliminamos características que solo tengan un valor (o un porcentaje muy elevado de un mismo valor)  y que por tanto no nos aportan información al modelo
+- Generación de nuevas características en base a las existentes
+- Transformación de algunas características numéricas en categóricas agrupándo por valores
+- Análisis exploratorio de variables de tipo numérico
+- Tratamiento de outliers
+- Análisis exploratorio de variables de tipo categórico
+- Análisis exploratiro de variables de tipo booleano
+- Codificación de variables categóricas
+- Análisis de correlación. Eliminación de variables correladas
+- Transformación logarítmica de variables numéricas
+
+Como último punto se deben aplicar todas las transformaciones anteriones a las muestras de test
+
 
 
 
