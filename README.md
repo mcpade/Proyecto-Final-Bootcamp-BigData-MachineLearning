@@ -278,7 +278,20 @@ Como último punto se deben aplicar todas las transformaciones anteriones a las 
 
 Una vez que ya tenemos los datos limpios y procesados vamos a aplicar diferentes modelos "Supervised Machine Learning" y los compararemos entre si. La métrica que usaré al ser un problema de regresión es el RMSE (Error cuadrático medio).
 
-Antes de comenzar con el modelado normalizaré las variables de entrada. Normalizar significa, en este caso, comprimir o extender los valores de la variable para que estén en un rango definido. Utilizo el Standard Scaler
+Antes de comenzar con el modelado normalizaré las variables de entrada. Normalizar significa, en este caso, comprimir o extender los valores de la variable para que estén en un rango definido. Utilizo el método Standard Scaler.
+
+A continuación muestro una tabla con los algoritmos utilizados y sus resultados:
+
+Modelo | RMSE (test) | R2 (test)
+-------|-------------|------------- 
+Regresión Lineal | 5.7105e+20 | -1.6159e+21
+Ridge Regression | 0.3192 | 0.7115
+Lasso | 0.323 | 0.7056
+Árbol de Regresión | 0.358 | 0.6365
+Boosted Tree | 0.281 | 0.7773
+SVR | 0.301 | 0.7429
+
+
 
 
 
