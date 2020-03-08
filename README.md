@@ -13,6 +13,7 @@ Bootcamp: BIG DATA & MACHINE LEARNING - KEEPCODING
 3. [Sentiment Analysis - Reviews](#id4)
 4. [Topic Modeling - Description](#id5)
 5. [Cálculo de distancias a puntos de interés](#id6)
+- [Distancia a la estación de metro más cercana](#id11)
 6. [Limpieza, Análisis Exploratorio y Procesamiento de Datos](#id7)
 7. [Modelado con algoritmos de Machine Learning](#id8)
 8. [Modelado con algoritmos de Deep Learning](#id9)
@@ -177,7 +178,7 @@ El resultado es el fichero **"listings_sentiment_topic.csv"** que está en data.
 Una vez que he visto que en las descripciones de las viviendas son importantes los temas de transportes y atracciones cercanas voy a añadir al dataset las distancias de las viviendas a ciertos puntos de interés.
 El código se encuentra dentro de la carpeta code **"3 Distancias.ipynb"**
 
-### Distancia a la estación de metro más cercana
+### Distancia a la estación de metro más cercana<a name="id11"></a>
 
 Voy a añadir al dataset una columna con la distancia a la estación de metro más cercana de cada vivienda. Obtengo la información desde [esta](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=08055cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD) dirección de Datos Abiertos de Madrid. 
 En el propio código **"3 Distancias.ipynb"** están las instrucciones para bajarnos ese fichero que está en formato .kml y que habrá que transformar a csv.
