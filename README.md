@@ -365,13 +365,13 @@ Muestro a continuación los diferentes modelos de Redes Neuronales que he utiliz
 - Red Neuronal con 3 capas: 
 
 N. Capas | F. activación | F. de salida | F. de pérdidas | Optimizador | N. epocas | batch_size
--------------|---------------|-------------|--------------------|---------- 
+---------|---------------|--------------|----------------|-------------|-----------|------------ 
 3 | relu | lineal | mean squered_error | Adam (lr defecto) | 100 | 256
 
 Resultado
 
 RMSE Modelo (test) | R2 training | R2 test 
--------------|---------------
+-------------------|-------------|---------
 0.1448 | 0.9602 | 0.5903
 
 En este primer intento se ve que el resultado en train es mucho mejor que el que obtenermos en test lo cual indica que tenemos un problema de overfitting. Voy a aplicar regularización para intentar solucionar el problema
