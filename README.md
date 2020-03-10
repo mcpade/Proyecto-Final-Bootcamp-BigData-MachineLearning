@@ -454,9 +454,7 @@ Para poder hacer un entranamiento correcto se debería tener más imagenes de la
 
 Esto queda para una mejora futura de este proyecto
 
-Pets allowed  | Well-lit path to entrance   | Host greets you   
---------------|-----------------------------|-----------------
-No stairs or steps to enter | Extra pillows and blankets | 
+
 
 
 
