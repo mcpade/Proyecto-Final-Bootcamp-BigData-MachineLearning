@@ -453,11 +453,11 @@ Esto se pudo ver en una de las prácticas del Bootcamp en las que se utilizó re
 Para poder hacer un entranamiento correcto se debería tener más imagenes de la vivienda y además se debería clasificar por distintos tipos de estancia. Una vez separadas se podría montar una imagen compuesta a base de varias estancias para cada anuncio o bien entrenar solo con las fotos de determinada tipo de estancia: salón, cocina.....
 
 Esto queda para una mejora futura de este proyecto
-  Amenities  |    |   |   |   |   |    |
--------------|----|---|---|---|---|----|
-Buzzer/wireless intercom | Family/kid friendly | Fire extinguisher | Internet | Dryer | Oven | Patio or balcony
+
+Buzzer/wireless intercom  | Family/kid friendly   | Fire extinguisher   | Interne  | Dryer  | Oven  |  Patio or balcony  
+--------------------------|-----------------------|---------------------|----------|--------|-------|--------------------
 Private entrance | Stove | Paid parking off premises | Wide entrance | Crib | Cable TV | Room-darkening Shades
-Paid parking on premises | Smoke detector | Long term stays allowed | Wide hallways |Luggage dropoff allowed | Dishwaver |Wide entrance for guests
+Paid parking on premises | Smoke detector | Long term stays allowed | Wide hallways |Luggage dropoff allowed | Dishwaver | Wide entrance for guests
 
 
 
