@@ -454,10 +454,14 @@ Para poder hacer un entranamiento correcto se debería tener más imagenes de la
 
 Esto queda para una mejora futura de este proyecto
 
-Buzzer/wireless intercom  | Family/kid friendly   | Fire extinguisher   | Interne  | Dryer  | Oven  |  Patio or balcony  
---------------------------|-----------------------|---------------------|----------|--------|-------|--------------------
-Private entrance | Stove | Paid parking off premises | Wide entrance | Crib | Cable TV | Room-darkening Shades
-Paid parking on premises | Smoke detector | Long term stays allowed | Wide hallways |Luggage dropoff allowed | Dishwaver | Wide entrance for guests
+Dishes and silverware  | TV   | Elevator   | Hair dryer  | Air Conditioning  | Washer  
+-----------------------|------|------------|-------------|-------------------|-------
+Laptop friendly workspace | Iron | Microwave | Refrigerator | Hangers  
+
+
+
+
+
 
 
 
