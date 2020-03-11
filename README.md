@@ -450,7 +450,7 @@ Esta es una de esas situaciones en las que deep learning simplemente no es neces
 El problema que tenemos con el dataset de Airbnb es que para las fotos únicamente nos proporciona una URL que nos lleva a una única foto de la vivienda. Basta con echar un vistazo a estas fotos para comprobar que son de diversas estancias, de exteriores, hasta de mascotas. 
 Esto se pudo ver en una de las prácticas del Bootcamp en las que se utilizó redes convolucionales para intentar predecir el precio en base a las fotos y los resultados no fueron nada buenos, de ahí que haya decidido no incluirlo en este proyecto final.
 
-Para poder hacer un entranamiento correcto se debería tener más imagenes de la vivienda y además se debería clasificar por distintos tipos de estancia. Una vez separadas se podría montar una imagen compuesta a base de varias estancias para cada anuncio o bien entrenar solo con las fotos de determinada tipo de estancia: salón, cocina.....
+Para poder hacer un entrenamiento correcto se debería tener más imagenes de la vivienda y además se debería clasificar por distintos tipos de estancia. Una vez separadas se podría montar una imagen compuesta a base de varias estancias para cada anuncio o bien entrenar solo con las fotos de determinada tipo de estancia: salón, cocina.....
 
 Esto queda para una mejora futura de este proyecto
 
