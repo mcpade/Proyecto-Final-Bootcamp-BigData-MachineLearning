@@ -399,7 +399,7 @@ Muestro a continuación los diferentes modelos de Redes Neuronales que he utiliz
 --------|--------------|-------------|------------|-----------
 1 Red Neuronal con 3 capas | 0.0141 | 0.1448 | 0.9602 | 0.5903
 2 Red neuronal con 4 capas, regularización L1 y más épocas | 0.1034 | 0.1006 | 0.708 | 0.7152
-3 Red neuronal con 4 capas, regularización Droput 0.5 y más épocas | 0.1151 | 0.1305 | 0.6748 | 0.6307
+3 Red neuronal con 4 capas, regularización Dropout 0.5 y más épocas | 0.1151 | 0.1305 | 0.6748 | 0.6307
 4 Red neuronal con 4 capas, regularización Dropout 0.2 y mayor batch size | 0.0404 | 0.1245 | 0.8859 | 0.6477
 
 Examinando los resultados se ve que el mejor modelo es el **modelo 2: Red neuronal con 4 capas, regularización L1**
