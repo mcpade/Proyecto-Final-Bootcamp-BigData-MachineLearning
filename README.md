@@ -275,7 +275,7 @@ El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_d
 
 **code: 4 EDA.ipynb**
 
-El preprocesamiento y la limpieza de datos son tareas importantes que se deben llevar a cabo para que un conjunto de datos se pueda usar para el entrenamiento de modelo. Con el análisis exploratorio de datos realizamos un tratamiento estadístico de las muestras que nos permite ir analizando las posibles relaciones o visualizando conexiones entre ciertas variables. Se utilizan herramientas estadísticas junto con algunas visualizaviones para entender un poco más los datos de los que disponemos.
+El preprocesamiento y la limpieza de datos son tareas importantes que se deben llevar a cabo para que un conjunto de datos se pueda usar para el entrenamiento de modelo. Con el análisis exploratorio de datos realizamos un tratamiento estadístico de las muestras que nos permite ir analizando las posibles relaciones o visualizando conexiones entre ciertas variables. Se utilizan herramientas estadísticas junto con algunas visualizaciones para entender un poco más los datos de los que disponemos.
 
 El código **"4 EDA.ipynb"** se encarga de esta tarea. Pasos realizados:
 
