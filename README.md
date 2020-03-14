@@ -428,7 +428,7 @@ RMSE (train) | RMSE (test) | R2 (train) | R2 (test)
 
 Se consigue muy poca mejora para el aumento de complejidad. Con lo cual me quedo con el modelo anterior
 
-### Conclusión del modelado con algoritmos de Deep Larning
+### Conclusión del modelado con algoritmos de Deep Learning
 
 El modelo que mejor resultados me da es una **Red Neuronal con 4 capas, regularización L1, optimización de Adam y eliminación de características review correladas** Los parámetros son los siguientes:
    
