@@ -334,6 +334,8 @@ Acción  | Niteraciones | learning_rate | profundidad | RMSE-train | RMSE-test| 
 --------|--------------|---------------|-------------|------------|----------|----------|----------
 Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
 Modificación de Niteracions y learning Rate. Mantengo profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
+Modificación de profundidad a 4 | 1500 | 0.05 | 4 |0.158|0.281|0.9298|0.7766
+Modificación de profundidad a 3 | 2000 | 0.05 | 3 |0.136|0.281|0.9476|0.7761
 
 
 
