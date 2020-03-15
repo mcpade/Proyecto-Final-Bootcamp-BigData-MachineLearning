@@ -328,7 +328,14 @@ Niteraciones | learning_rate | profundidad
 -------------|---------------|-------------
 2000 | 0.05 | 6  
 
-A continuación he realizado una serie de pruebas para intentar mejorar más este modelo reduciendo su complejidad
+A continuación he realizado una serie de pruebas para intentar mejorar más este modelo y reducir su complejidad
+
+Acción  | Niteraciones | learning_rate | profundidad | RMSE-train | RMSE-test| R2 train | R2 test
+--------|--------------|---------------|-------------|------------|----------|----------|----------
+Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
+Modificación de Niteracions y learning Rate. Mantengo profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
+
+
 
 - Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación.
 
