@@ -332,45 +332,25 @@ A continuación he realizado una serie de pruebas para intentar mejorar más est
 
 Acción  | Niteraciones | learning_rate | profundidad | RMSE-train | RMSE-test| R2 train | R2 test
 --------|--------------|---------------|-------------|------------|----------|----------|----------
-Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
-Modificación de Niteracions y learning Rate. Mantengo profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
-Modificación de profundidad a 4 | 1500 | 0.05 | 4 |0.158|0.281|0.9298|0.7766
-Modificación de profundidad a 3 | 2000 | 0.05 | 3 |0.136|0.281|0.9476|0.7761
+1.Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
+2.Modificación de Niteraciones y learning Rate. Mantengo profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
+3.Modificación de profundidad a 4 | 1500 | 0.05 | 4 |0.158|0.281|0.9298|0.7766
+4.Modificación de profundidad a 3 | 2000 | 0.05 | 3 |0.136|0.281|0.9476|0.7761
+5.Modificación de Niteraciones a 500 | 500 | 0.1 | 3 | 0.183 | 0.282 | 0.9057 | 0.7756
+6.Modificación de Niteraciones a 200 | 200
+
+Resultados:
+1. Se consigue una mejora de resultados y encima hemos quitado complejidad al modelo
+2. Ha aumentado el número de iteracciones óptimas pero el resultado sigue siendo el mismo.
+3. Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo 
+4. Ha aumentado muy poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo aunque por otro lado han aumentado el número de iteracione
+5.- Ha aumentado un poco el error pero hemos disminuidos iteraciones y por tanto complejidad
 
 
 
-- Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación.
-
-Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
--------------|---------------|-------------|--------------------|---------- 
-1000 | 0.05 | 6 | 0.278 | 0.7819
-
-Se consigue una mejora de resultados y encima hemos quitado complejidad al modelo
-
-  
-- Modificación de Niteracions y learning Rate. Mantengo profundidad 6. 
-
-Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
--------------|---------------|-------------|--------------------|---------- 
-1200 | 0.05 | 6 | 0.278 | 0.7819
-
-Resultado: Ha aumentado el número de iteracciones óptimas pero el resultado sigue siendo el mismo.    
    
-- Modificación de profundidad a 4   
 
-Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
--------------|---------------|-------------|--------------------|---------- 
-1500 | 0.05 | 4 | 0.281 | 0.7766
 
-Resultado: Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo por lo que me quedo de momento con esta solución
-
-- Modificación de Niteracions y learning Rate. Mantengo profundidad 4. 
-
-Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
--------------|---------------|-------------|--------------------|---------- 
-1500 | 0.05 | 4 | 0.281 | 0.7766
-
-Los parámetros óptimos vuelven a ser los mismos que en la anterior prueba
 
 ### Conclusión del modelado con algoritmos de Machine Learning
 
