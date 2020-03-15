@@ -312,17 +312,17 @@ Antes de comenzar con el modelado normalizaré las variables de entrada. Normali
 
 A continuación muestro una tabla con los algoritmos utilizados y sus resultados:
 
-Modelo | RMSE-train | R2-train | RMSE-test | R2-test
--------|------------|----------|-----------|--------- 
-Regresión Lineal | 0.1034 | 0.708 | 5.7105e+20 | -1.6159e+21
-Ridge Regression | 0.3291 | 0.7077| 0.3192 | 0.7115
-Lasso | 0.329 | 0.6937 | 0.323 | 0.7056
-Árbol de Regresión | 0.355 | 0.644 | 0.358 | 0.6365
-Radom Forest | 0.339 | 0.6754 | 0.356 | 0.6461
-Boosted Tree | 0.0391 | 0.9957 | 0.281 | 0.7773
-SVR | 0.23 | 0.85 | 0.301 | 0.7429
+Modelo | RMSE-train | RMSE-test | R2-train | R2-test
+-------|------------|-----------|----------|--------- 
+Regresión Lineal | 0.1034 | 5.7105e+20 |0.708 | -1.6159e+21
+Ridge Regression | 0.322 | 0.3192 | 0.7077| 0.7115
+Lasso | 0.329 | 0.323 | 0.6937 | 0.7056
+Árbol de Regresión | 0.355 | 0.358 | 0.644 | 0.6365
+Radom Forest | 0.339 | 0.356 | 0.6754 | 0.6461
+Boosted Tree | 0.0391 | 0.281 | 0.9957 | 0.7773
+SVR | 0.23 | 0.301 | 0.85 | 0.7429
 
-Según los resultados anteriores el modelo que escojo es el **Gradiente Boosted Tree**. Los parámetros concretos de este modelo son:
+Según los resultados anteriores el modelo que escojo es el **Boosted Tree**. Los parámetros concretos de este modelo son:
 
 Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
 -------------|---------------|-------------|--------------------|---------- 
