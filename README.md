@@ -322,13 +322,13 @@ Radom Forest | 0.339 | 0.356 | 0.6754 | 0.6461
 Boosted Tree | 0.0391 | 0.281 | 0.9957 | 0.7773
 SVR | 0.23 | 0.301 | 0.85 | 0.7429
 
-Según los resultados anteriores el modelo que escojo es el **Boosted Tree**. Los parámetros concretos de este modelo son:
+Según los resultados anteriores el modelo que escojo es el **Boosted Tree**. Es el que mejor prestaciones me da aunque también se aprecia que presenta overfitting. Los parámetros concretos de este modelo son:
 
 Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
 -------------|---------------|-------------|--------------------|---------- 
 2000 | 0.05 | 6 | 0.281 | 0.7773
 
-A continuación he realizado una serie de pruebas para intentar mejorar aún más este modelo:
+A continuación he realizado una serie de pruebas para intentar mejorar más este modelo reduciendo su complejidad
 
 - Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación.
 
