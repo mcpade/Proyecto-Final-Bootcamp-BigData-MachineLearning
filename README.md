@@ -332,23 +332,19 @@ A continuación he realizado una serie de pruebas para intentar mejorar más est
 
 Acción  | Niteraciones | learning_rate | profundidad | RMSE-train | RMSE-test| R2 train | R2 test
 --------|--------------|---------------|-------------|------------|----------|----------|----------
-1.Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
-2.Modificación de Niteraciones y learning Rate. Mantengo profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
-3.Modificación de profundidad a 4 | 1500 | 0.05 | 4 |0.158|0.281|0.9298|0.7766
-4.Modificación de profundidad a 3 | 2000 | 0.05 | 3 |0.136|0.281|0.9476|0.7761
-5.Modificación de Niteraciones a 500 | 500 | 0.1 | 3 | 0.183 | 0.282 | 0.9057 | 0.7756
-6.Modificación de Niteraciones a 200 | 200
+1. Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
+2. Modificación de Niteraciones y learning Rate. Mantengo profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
+3. Modificación de profundidad a 4 | 1500 | 0.05 | 4 |0.158|0.281|0.9298|0.7766
+4. Modificación de profundidad a 3 | 2000 | 0.05 | 3 |0.136|0.281|0.9476|0.7761
+5. Modificación de Niteraciones a 500 | 500 | 0.1 | 3 | 0.231 | 0.285 | 0.8496 | 0.7703
+
 
 Resultados:
 1. Se consigue una mejora de resultados y encima hemos quitado complejidad al modelo
 2. Ha aumentado el número de iteracciones óptimas pero el resultado sigue siendo el mismo.
 3. Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo 
 4. Ha aumentado muy poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo aunque por otro lado han aumentado el número de iteracione
-5.- Ha aumentado un poco el error pero hemos disminuidos iteraciones y por tanto complejidad
-
-
-
-   
+5.- Ha aumentado un poco el error pero hemos disminuido iteraciones y por tanto complejidad
 
 
 
@@ -358,13 +354,13 @@ El modelo que mejor resultados me da es el **"Gradient Boosted Tree"** con la el
    
   Niteraciones | learning_rate | profundidad 
 -------------|---------------|--------------
-1500 | 0.05 | 4 
+500 | 0.1 | 3 
 
 Con esto consigo para mi conjunto de test y, tras aplicar todas las transformaciones necesarias, estos resultados:
 
 RMSE Modelo (test) | R2 test 
 -------------|---------------
-0.7766 | 0.281  
+0.7703 | 0.285 
 
 Las tres característica más importantes para el cálculo del precio en orden son:
 
