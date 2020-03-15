@@ -324,9 +324,9 @@ SVR | 0.23 | 0.301 | 0.85 | 0.7429
 
 Según los resultados anteriores el modelo que escojo es el **Boosted Tree**. Es el que mejor prestaciones me da aunque también se aprecia que presenta overfitting. Los parámetros concretos de este modelo son:
 
-Niteraciones | learning_rate | profundidad | RMSE Modelo (test) | R2 test
--------------|---------------|-------------|--------------------|---------- 
-2000 | 0.05 | 6 | 0.281 | 0.7773
+Niteraciones | learning_rate | profundidad 
+-------------|---------------|-------------
+2000 | 0.05 | 6  
 
 A continuación he realizado una serie de pruebas para intentar mejorar más este modelo reduciendo su complejidad
 
