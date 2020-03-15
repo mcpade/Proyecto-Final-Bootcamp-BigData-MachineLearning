@@ -332,11 +332,11 @@ A continuación he realizado una serie de pruebas para intentar mejorar más est
 
 Acción  | Niteraciones | learning_rate | profundidad | RMSE-train | RMSE-test| R2 train | R2 test
 --------|--------------|---------------|-------------|------------|----------|----------|----------
-1. Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
-2. Modificación de Niteraciones y learning Rate. Mantengo profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
-3. Modificación de profundidad a 4 | 1500 | 0.05 | 4 |0.158|0.281|0.9298|0.7766
-4. Modificación de profundidad a 3 | 2000 | 0.05 | 3 |0.136|0.281|0.9476|0.7761
-5. Modificación de Niteraciones a 500 | 500 | 0.1 | 3 | 0.231 | 0.285 | 0.8496 | 0.7703
+1.Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
+2.Modificación de Niteraciones y learning Rate. Mantengo profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
+3.Modificación de profundidad a 4 | 1500 | 0.05 | 4 |0.158|0.281|0.9298|0.7766
+4.Modificación de profundidad a 3 | 2000 | 0.05 | 3 |0.136|0.281|0.9476|0.7761
+5.Modificación de Niteraciones a 500 | 500 | 0.1 | 3 | 0.231 | 0.285 | 0.8496 | 0.7703
 
 
 Resultados:
