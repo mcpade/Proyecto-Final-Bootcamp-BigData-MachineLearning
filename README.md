@@ -343,8 +343,8 @@ Resultados:
 1. Se consigue una mejora de resultados y encima hemos quitado complejidad al modelo
 2. Ha aumentado el número de iteracciones óptimas pero el resultado sigue siendo el mismo.
 3. Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo 
-4. Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo aunque por otro lado han aumentado el número de iteracione
-5.- Ha aumentado un poco el error pero hemos disminuido iteraciones y por tanto complejidad
+4. Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo aunque por otro lado han aumentado el número de iteraciones
+5. Ha aumentado un poco el error pero hemos disminuido iteraciones y por tanto complejidad
 
 
 
