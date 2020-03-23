@@ -154,17 +154,17 @@ El resultado es el fichero **"listing_sentiment.csv"** que está en data. Durant
 
 **code: 2 Topic Modeling Descripciones.ipynb**
 
-Utilizando técnicas de NLP voy a realizar un Topic Modeling sobre la columna "description". El objetivo es encontrar los topics principales sobre los que se habla en esas descripciones de las viviendas. Una vez encontrados se crearán nuevas características correspondientes a estos topics en el dataset "listings". Para cada vivienda se calculará el porcentaje de aparición de cada topic en la descripción y ese valor será añadido como característica en el topic correspondiente.
+Utilizando técnicas de NLP se realiza Topic Modeling sobre la columna "description". El objetivo es encontrar los topics principales sobre los que se habla en esas descripciones de las viviendas. Una vez encontrados se crearán nuevas características correspondientes a estos topics en el dataset "listings". Para cada vivienda se calculará el porcentaje de aparición de cada topic en la descripción y ese valor será añadido como característica en el topic correspondiente.
 
 El código se encuentra dentro de la carpeta code **"2 Topic Modeling Descripciones.ipynb"**
 Los pasos que he realizado son los siguientes:
 
-- Como tengo descripciones tanto en inglés como en español realizo topic modeling para cada idioma y luego uno los resultados de ambos idiomas
-- Recorro toda la columna "description" y haciendo uso de la librería **spacy** detecto el idioma añadiendo una nueva columna con ese idioma
-- Me quedo con todos los que están en inglés
-- Hago un preprocesamiento de la característica "description" convirtiendo a minúsculas, quitando stop word...etc
-- Utilizo el algoritmo LDA para hacer Topic Modeling sobre la columna "description"
-- Determino cual es el número óptimo de Topic pero me quedo con 5 por simplicidad
+- Como tenemos descripciones tanto en inglés como en español se realiza topic modeling para cada idioma y luego se une los resultados de ambos idiomas
+- Recorremos toda la columna "description" y, haciendo uso de la librería **spacy**, detectamos el idioma añadiendo una nueva columna con ese idioma
+- Nos quedamos con todos los que están en inglés
+- Se realiza un preprocesamiento de la característica "description" convirtiendo a minúsculas, quitando stop word...etc
+- Se utiliza el algoritmo LDA para hacer Topic Modeling sobre la columna "description"
+- Determinamos cual es el número óptimo de Topic pero nos quedamos con 5 por simplicidad
 - Los 5 Topics que resultan son:
 
         - 1.Topic General: Este topic es el más confuso. Es un topic genérico que no cuadra dentro de las otras 4 categorías
@@ -173,11 +173,11 @@ Los pasos que he realizado son los siguientes:
         - 4.Topic Servicios: Este topic está asociado a los servicios de los que dispone la vivienda	
         - 5.Topic Transporte: Este topic está asociado al trasporte cercano a al necesario para llegar a la vivienda
 
-- Añado al dataset 5 columnas con cada uno de estos 5 Topics y su correspondiente distribución para cada vivienda
-- Hago lo mismo para las descriciones que están español usando un dataset independiente
-- Cuando tengo mis dos datasets en inglés y en español con las nuevas columnas topics los uno 
+- Se añade al dataset 5 columnas con cada uno de estos 5 Topics y su correspondiente distribución para cada vivienda
+- Hacemos lo mismo para las descriciones que están español usando un dataset independiente
+- Una vez que tenemos los dos datasets en inglés y en español con las nuevas columnas topics, los unimos
 
-En este momento le hemos añadido al dataet 5 columnas adicionales de topics de la descripción
+En este momento se ha añadido al dataset 5 columnas adicionales de topics de la descripción
 
 El resultado es el fichero **"listings_sentiment_topic.csv"** que está en data. Durante este análisis se han ido creando ficheros csv intermedios que también están en data
 
