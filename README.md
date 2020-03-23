@@ -306,11 +306,11 @@ Como último punto se deben aplicar todas las transformaciones anteriones a las 
 
 **code: 5 Modelado con algoritmos de Machine Learning - ML.ipynb**
 
-Una vez que ya tenemos los datos limpios y procesados vamos a aplicar diferentes modelos "Supervised Machine Learning" y los compararemos entre si. La métrica que usaré al ser un problema de regresión es el RMSE (Error cuadrático medio).
+Una vez que ya tenemos los datos limpios y procesados vamos a aplicar diferentes modelos "Supervised Machine Learning" y los compararemos entre si. La métrica que se usará al ser un problema de regresión es el RMSE (Error cuadrático medio).
 
-Antes de comenzar con el modelado normalizaré las variables de entrada. Normalizar significa, en este caso, comprimir o extender los valores de la variable para que estén en un rango definido. Utilizo el método Standard Scaler.
+Antes de comenzar con el modelado se normalizarán las variables de entrada. Normalizar significa, en este caso, comprimir o extender los valores de la variable para que estén en un rango definido. Se utilizará el método Standard Scaler.
 
-A continuación muestro una tabla con los algoritmos utilizados y sus resultados:
+A continuación se muestra una tabla con los algoritmos utilizados y sus resultados:
 
 Modelo | RMSE-train | RMSE-test | R2-train | R2-test
 -------|------------|-----------|----------|--------- 
@@ -322,41 +322,41 @@ Radom Forest | 0.339 | 0.356 | 0.6754 | 0.6461
 Boosted Tree | 0.0391 | 0.281 | 0.9957 | 0.7773
 SVR | 0.23 | 0.301 | 0.85 | 0.7429
 
-Según los resultados anteriores el modelo que escojo es el **Boosted Tree**. Es el que mejor prestaciones me da aunque también se aprecia que presenta overfitting. Los parámetros concretos de este modelo son:
+Según los resultados anteriores el modelo que se escoge es el **Boosted Tree**. Es el que mejor prestaciones nos da aunque también se aprecia que presenta overfitting. Los parámetros concretos de este modelo son:
 
 Niteraciones | learning_rate | profundidad 
 -------------|---------------|-------------
 2000 | 0.05 | 6  
 
-A continuación he realizado una serie de pruebas para intentar mejorar más este modelo y reducir su complejidad
+A continuación se ha realizado una serie de pruebas para intentar mejorar más este modelo y reducir su complejidad
 
 Acción  | Niteraciones | learning_rate | profundidad | RMSE-train | RMSE-test| R2 train | R2 test
 --------|--------------|---------------|-------------|------------|----------|----------|----------
-1.Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
-2.Modificación de Niteraciones y learning Rate. Mantengo profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
+1.Eliminación de características reviews particulares quedándonos solo con las reviews genéricas. En su momento se vió que mostraban correlación |1000 | 0.05 | 6 |0.0874 |0.278|0.9784|0.7819
+2.Modificación de Niteraciones y learning Rate. Mantenemos profundidad 6 | 1200 | 0.05 | 6 |0.0727|0.278|0.9851|0.7819
 3.Modificación de profundidad a 4 | 1500 | 0.05 | 4 |0.158|0.281|0.9298|0.7766
 4.Modificación de profundidad a 3 | 2000 | 0.05 | 3 |0.197|0.284|0.89|0.7715
 5.Modificación de Niteraciones a 500 | 500 | 0.1 | 3 | 0.231 | 0.285 | 0.8496 | 0.7703
 
 
 Resultados:
-1. Se consigue una mejora de resultados y encima hemos quitado complejidad al modelo
+1. Se consigue una mejora de resultados y además hemos quitado complejidad al modelo
 2. Ha aumentado el número de iteracciones óptimas pero el resultado sigue siendo el mismo.
-3. Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo 
-4. Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y le he quitado complejidad al modelo aunque por otro lado han aumentado el número de iteraciones
+3. Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y se le ha quitado complejidad al modelo 
+4. Ha aumentado un poco el error al disminuir la profundidad pero no hay demasiada diferencia y se le ha quitado complejidad al modelo aunque por otro lado han aumentado el número de iteraciones
 5. Ha aumentado un poco el error pero hemos disminuido iteraciones y por tanto complejidad
 
 
 
 ### Conclusión del modelado con algoritmos de Machine Learning
 
-El modelo que mejor resultados me da es el **"Gradient Boosted Tree"** con la eliminación de las características reviews particulares. Los parámetros son los siguientes:
+El modelo que mejor resultados nos da es el **"Gradient Boosted Tree"** con la eliminación de las características reviews particulares. Los parámetros son los siguientes:
    
   Niteraciones | learning_rate | profundidad 
 -------------|---------------|--------------
 500 | 0.1 | 3 
 
-Con esto consigo para mi conjunto de test y, tras aplicar todas las transformaciones necesarias, estos resultados:
+Con esto se consigue para el conjunto de test y, tras aplicar todas las transformaciones necesarias, estos resultados:
 
 RMSE Modelo (test) | R2 test 
 -------------|---------------
