@@ -374,11 +374,11 @@ El modelo está almacenado en la carpeta model del proyecto con el nombre **Grad
 
 **code: 6 Modelado con algoritmos de Deep Learning.ipynb**
 
-Vamos ahora a aplicar diferentes modelos de Deep Learning y los compararemos entre si. La métrica que usaré al ser un problema de regresión es el RMSE (Error cuadrático medio).
+Vamos ahora a aplicar diferentes modelos de Deep Learning y los compararemos entre si. La métrica que se usará al ser un problema de regresión es el RMSE (Error cuadrático medio).
 
-Antes de comenzar con el modelado normalizaré las variables de entrada utilizando el método Standard Scaler.
+Antes de comenzar con el modelado normalizaremos las variables de entrada utilizando el método Standard Scaler.
 
-Muestro a continuación los diferentes modelos de Redes Neuronales que he utilizado
+Se muestra a continuación los diferentes modelos de Redes Neuronales que se han utilizado
 
  Modelo | RMSE (train) | RMSE (test) | R2 (train) | R2 (test)
 --------|--------------|-------------|------------|-----------
@@ -395,15 +395,15 @@ N. Capas | F. activación | F. salida | F. pérdidas | Regularización | Optimiz
 ---------|---------------|-----------|-------------|----------------|-------------|-----------|------------
 4 | Relu | linear | mean squered_error | L1 | Adam | 150 | 256
 
-A continuación he realizado una serie de pruebas para intentar mejorar aún más este modelo:
+A continuación se ha realizado una serie de pruebas para intentar mejorar aún más este modelo:
 
-- Eliminación de características reviews particulares quedándome solo con las reviews genéricas. Vi en su momento que mostraban correlación.
+- Eliminación de características reviews particulares quedándonos solo con las reviews genéricas. Vimos en su momento que mostraban correlación.
 
 RMSE (train) | RMSE (test) | R2 (train) | R2 (test)
 -------------|-------------|------------|-----------
 0.1071 | 0.1039 | 0.6974 | 0.7061
 
-Conseguimos resultados similares al del modelo 2 pero he eliminado 30 características con lo que la complejidad es menor por lo que nos quedamos de momento con esta opción
+Conseguimos resultados similares al del modelo 2 pero se han eliminado 30 características, con lo que la complejidad es menor. Nos quedamos de momento con esta opción
 
 - Red neuronal con 5 capas, regularización L1 y eliminación de características correladas
 
@@ -411,17 +411,17 @@ RMSE (train) | RMSE (test) | R2 (train) | R2 (test)
 -------------|-------------|------------|-----------
 0.1064 | 0.1031 | 0.6995 | 0.7083
 
-Se consigue muy poca mejora para el aumento de complejidad. Con lo cual me quedo con el modelo anterior
+Se consigue muy poca mejora para el aumento de complejidad. Con lo cual nos quedamos con el modelo anterior
 
 ### Conclusión del modelado con algoritmos de Deep Learning
 
-El modelo que mejor resultados me da es una **Red Neuronal con 4 capas, regularización L1, optimización de Adam y eliminación de características review correladas** Los parámetros son los siguientes:
+El modelo que mejor resultados nos da es una **Red Neuronal con 4 capas, regularización L1, optimización de Adam y eliminación de características review correladas** Los parámetros son los siguientes:
    
  N. Capas | F. activación | F. salida | F. pérdidas | Regularización | Optimizador | N. epocas | Batch_size
 ---------|---------------|-----------|-------------|----------------|-------------|-----------|------------
 4 | Relu | linear | mean squered_error | L1 | Adam | 150 | 256  
   
-Con esto consigo para mi conjunto de test y, tras aplicar todas las transformaciones necesarias, estos resultados:
+Con esto conseguimos para el conjunto de test y, tras aplicar todas las transformaciones necesarias, estos resultados:
 
 RMSE Modelo (test) | R2 test 
 -------------|---------------
