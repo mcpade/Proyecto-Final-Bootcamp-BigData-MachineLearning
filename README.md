@@ -125,7 +125,7 @@ Ambos ficheros se encuentra en la carpeta data de este proyecto
 
 **code: 1 Sentimental analysis Reviews.ipynb**
 
-Utilizando técnicas de NLP voy a realizar un Sentiment Analysis de los comentarios contenidos en el fichero "reviews.csv". El objetivo es conseguir un valor para cada uno de esos comentarios aplicando análisis de sentimientos. Posteriormente se hará la media de valor obtenido para todos los comentarios para una misma vivienda y ese resultado lo añadiré como una característica más al dataset "listing.csv" de Airbnb.
+Utilizando técnicas de NLP voy a realizar un Sentiment Analysis de los comentarios contenidos en el fichero "reviews.csv". El objetivo es conseguir un valor para cada uno de esos comentarios aplicando análisis de sentimientos. Posteriormente se hará la media del valor obtenido para todos los comentarios para una misma vivienda y ese resultado lo añadiré como una característica más al dataset "listing.csv" de Airbnb.
 
 El código correspondiente se encuentra dentro de la carpeta code **"1 Sentimental analysis Reviews.ipynb"**
 Los pasos que he realizado son los siguientes:
