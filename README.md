@@ -185,29 +185,29 @@ El resultado es el fichero **"listings_sentiment_topic.csv"** que está en data.
 
 **code: 3 Distancias.ipynb**
 
-Una vez que he visto que en las descripciones de las viviendas son importantes los temas de transportes y atracciones cercanas voy a añadir al dataset las distancias de las viviendas a ciertos puntos de interés.
+Una vez que se ha visto que en las descripciones de las viviendas son importantes los temas de transportes y atracciones cercanas, se va a añadir al dataset las distancias de las viviendas a ciertos puntos de interés.
 El código se encuentra dentro de la carpeta code **"3 Distancias.ipynb"**
 
 ### Distancia a la estación de metro más cercana<a name="id11"></a>
 
-Voy a añadir al dataset una columna con la distancia a la estación de metro más cercana de cada vivienda. Obtengo la información desde [esta](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=08055cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD) dirección de Datos Abiertos de Madrid. 
+Se va a añadir al dataset una columna con la distancia a la estación de metro más cercana de cada vivienda. Obtenemos la información desde [esta](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=08055cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD) dirección de Datos Abiertos de Madrid. 
 En el propio código **"3 Distancias.ipynb"** están las instrucciones para bajarnos ese fichero que está en formato .kml y que habrá que transformar a csv.
 
 El fichero "Metro.csv" que obtenemos contiene información de coordenadas geográficas de las diferentes estaciones de metro de Madrid.
 Los pasos seguidos son:
 
-- Usando los datos de longitud y latitud de la vivienda y de las estaciones de metro se cálcula la distancia de cada vivienda a cada una de las estaciones. Lo almaceno en un nuevo dataset
+- Usando los datos de longitud y latitud de la vivienda y de las estaciones de metro se cálcula la distancia de cada vivienda a cada una de las estaciones. Lo almacenamos en un nuevo dataset
 - Se ordena por el campo calculado de distancia agrupando por el id de la vivienda.
-- Al ordenar de menor a mayor nos quedamos con el primero que nos aparece de cada vivienda eliminando el resto, así me quedo con la distancia más corta
-- Uno el dataset obtenido de distancias con el dataset de viviendas usando como clave el id
+- Al ordenar de menor a mayor nos quedamos con el primero que nos aparece de cada vivienda eliminando el resto, así nos quedamos con la distancia más corta
+- Unimos el dataset obtenido de distancias con el dataset de viviendas usando como clave el id
 
-Tras esto he añadido al datset una columna que contiene la distancia a la estación de metro más cercana.
+Tras esto se ha añadido al datset una columna que contiene la distancia a la estación de metro más cercana.
 El resultado es el fichero **"listings_sentiment_topic_discstation.csv"** que está en data. 
 
 
 ### Distancia al parking público más cercano<a name="id12"></a>
 
-Voy a añadir al dataset una columna con la distancia al parking púbico más cercano de cada vivienda. Obtengo la información de los parkings consultando la API de EMT de Madrid 
+Vamos a añadir al dataset una columna con la distancia al parking púbico más cercano de cada vivienda. Obtenemos la información de los parkings consultando la API de EMT de Madrid 
 
 La documentación de esta API está en esta dirección: https://apidocs.emtmadrid.es/
 
@@ -220,7 +220,7 @@ Los pasos seguidos son:
 
 - Usando los datos de longitud y latitud de la vivienda y de los parkings se cálcula la distancia de cada vivienda a cada parking. Lo almaceno en un nuevo dataset
 - Se ordena por el campo calculado de distancia agrupando por el id de la vivienda.
-- Al ordenar de menor a mayor nos quedamos con el primero que nos aparece de cada vivienda eliminando el resto, así me quedo con la distancia más corta
+- Al ordenar de menor a mayor nos quedamos con el primero que nos aparece de cada vivienda eliminando el resto, así nos quedamos con la distancia más corta
 - Uno el dataset obtenido de distancias con el dataset de viviendas usando como clave el id
 
 Tras esto he añadido al datset una columna que contiene la distancia al parking más cercano.
@@ -229,14 +229,14 @@ El resultado es el fichero **"listings_sentiment_topic_discstation_discparking.c
 
 ### Distancia a los 5 museos más importantes de Madrid<a name="id13"></a>
 
-Voy a añadir al dataset cinco columnas con la distancia a los 5 museos más importantes de la ciudad de Madrid. Podría hacer manualmente un fichero que contuviese las coordenadas geográficas de estos 5 museos pero voy a utilizar la API de Datos Abiertos de Madrid para obtener el listado de todos los museos y de ahí escoger los que me interese por si en algún momento quiero cambiar y poner otros museos.
+Añadimos ahora al dataset cinco columnas con la distancia a los 5 museos más importantes de la ciudad de Madrid. Se podría hacer manualmente un fichero que contuviese las coordenadas geográficas de estos 5 museos pero vamos a utilizar la API de Datos Abiertos de Madrid para obtener el listado de todos los museos y de ahí escoger los que nos interese por si en algún momento queremos cambiar y poner otros museos.
 
 La documentación de la API está [aquí](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
 
 En el propio código **"3 Distancias.ipynb"**  se realiza la comunicación con la API para obtener el fichero.
 El fichero "museos.csv" que obtenemos contiene información de coordenadas geográficas de los diferentes museos de Madrid.
 
-A partir de ese fichero me creo un dataset con los 5 museos principales:
+A partir de ese fichero nos creamos un dataset con los 5 museos principales:
 
 - Museo del Prado,
 - Museo Nacional Centro de Arte Reina Sofía,
@@ -246,16 +246,16 @@ A partir de ese fichero me creo un dataset con los 5 museos principales:
 
 Los pasos seguidos son:
 
-- Usando los datos de longitud y latitud de la vivienda y de los 5 museos cálculo la distancia de una vivienda a cada uno de ellos.
-- Añado 5 columnas al dataset original con la distancia de cada vivienda a cada uno de los 5 museos
+- Usando los datos de longitud y latitud de la vivienda y de los 5 museos cálculamos la distancia de una vivienda a cada uno de ellos.
+- Añadimos 5 columnas al dataset original con la distancia de cada vivienda a cada uno de los 5 museos
 
-Tras esto he añadido al datset 5 columnas que contiene la distancia a los 5 museos más importantes
+Tras esto añadimos al datset 5 columnas que contiene la distancia a los 5 museos más importantes.
 El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_discmuseos.csv"** que está en data.
 
 ### Distancia a los 5 lugares/monumentos más importantes de Madrid<a name="id14"></a>
 
-Voy a añadir al dataset cinco columnas con la distancia a los 5 lugares/monumentos más importantes de la ciudad de Madrid. En este caso el fichero con las coordenadas geográficas de esos 5 lugares/monumentos de la ciudad de Madrid lo he creado de forma manual.
-El fichero "Atracciones.csv" que está en data contiene las coordenadas geográficade de estos 5 lugares que he escogido que sean:
+Vamos a añadir además al dataset cinco columnas con la distancia a los 5 lugares/monumentos más importantes de la ciudad de Madrid. En este caso el fichero con las coordenadas geográficas de esos 5 lugares/monumentos de la ciudad de Madrid se ha creado de forma manual.
+El fichero "Atracciones.csv" que está en data contiene las coordenadas geográficade de estos 5 lugares que se han escogido que sean:
 
 - Puerta del Sol
 - Plaza Mayor
@@ -265,8 +265,8 @@ El fichero "Atracciones.csv" que está en data contiene las coordenadas geográf
 
 Los pasos seguidos son:
 
-- Usando los datos de longitud y latitud de la vivienda y de los 5 atracciones cálculo la distancia de una vivienda a cada una de ellos.
-- Añado 5 columnas al dataset original con la distancia de cada vivienda a cada uno de las 5 atracciones
+- Usando los datos de longitud y latitud de la vivienda y de los 5 atracciones se calcula la distancia de una vivienda a cada una de ellos.
+- Añadimos 5 columnas al dataset original con la distancia de cada vivienda a cada uno de las 5 atracciones
 
 Tras esto he añadido al datset 5 columnas que contiene la distancia a los 5 atracciones más importantes
 El resultado es el fichero **"listings_sentiment_topic_discstation_discparking_discmuseos_discatracciones.csv"** que está en data.
