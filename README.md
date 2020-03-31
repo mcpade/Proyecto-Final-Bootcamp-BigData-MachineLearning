@@ -142,7 +142,7 @@ El resultado que da TextBlob es: polarity y subjectivity. Nos interesa polarity 
 
 - El siguiente paso es agrupar por listing_id (hay varias reviews por id) y hacer la media de la columna sentiment obtenida en el paso anterior
 
-- Creamos nuevo dataset con id y la media del sentiment
+- Creamos un nuevo dataset con id y la media del sentiment
 
 - Hacemos un join con el dataset "listing" de tipo inner para buscar la intersección y con la clave id
 
