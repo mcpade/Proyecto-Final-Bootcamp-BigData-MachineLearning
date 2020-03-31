@@ -130,7 +130,7 @@ Utilizando técnicas de NLP voy a realizar un Sentiment Analysis de los comentar
 El código correspondiente se encuentra dentro de la carpeta code **"1 Sentimental analysis Reviews.ipynb"**
 Los pasos que he realizado son los siguientes:
 
-- Transformar el fichero reviews.csv en un dataframe y recorrer la columna "comments" aplicando **TexBlob** Sentiment Analysis sobre esa columna. TexBlob es una librearía que hace NLP y está entrenada para comentarios en inglés en redes sociales
+- Transformar el fichero reviews.csv en un dataframe y recorrer la columna "comments" aplicando **TexBlob** Sentiment Analysis sobre esa columna. TexBlob es una librería que hace NLP y está entrenada para comentarios en inglés en redes sociales
 
 https://github.com/sloria/textblob
 
