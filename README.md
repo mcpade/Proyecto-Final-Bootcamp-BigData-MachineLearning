@@ -358,8 +358,8 @@ El modelo que mejor resultados nos da es el **"Gradient Boosted Tree"** con la e
 
 Con esto se consigue para el conjunto de test y, tras aplicar todas las transformaciones necesarias, estos resultados:
 
-RMSE Modelo (test) | R2 test 
--------------|---------------
+R2 (test) | RMSE (test) 
+----------|---------------
 0.7703 | 0.285 
 
 Las tres característica más importantes para el cálculo del precio en orden son:
